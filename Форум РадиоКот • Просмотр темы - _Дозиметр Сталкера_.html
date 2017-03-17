@@ -1,0 +1,2908 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="content-language" content="ru">
+<meta name="creation-date" content="02/20/2007">
+<meta name="revisit-after" content="15 days">
+
+<script type="text/javascript"  src="http://radiokot.ru/templates/radiokot_classic/scr1.js"></script>
+<link rel="SHORTCUT ICON" href="http://radiokot.ru/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="http://radiokot.ru/templates/radiokot_classic/my.css">
+
+<link type="text/css" rel="stylesheet" href="/templates/dropdown/jquery.dropdown.css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script type="text/javascript" src="/templates/dropdown/jquery.dropdown.js"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="http://radiokot.ru/templates/radiokot_classic/js/jquery.mousewheel-3.0.6.pack.js"></script>
+<!-- Add fancyBox main JS and CSS files -->
+<script type="text/javascript" src="http://radiokot.ru/templates/radiokot_classic/js/jquery.fancybox.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="http://radiokot.ru/templates/radiokot_classic/css/fancybox/jquery.fancybox.css" media="screen" />
+<script type='text/javascript'>	$(document).ready(function() {	$('.fancybox, .fancybox_buy').fancybox();});</script>
+
+
+
+
+
+
+
+<script type='text/javascript'>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+<script type='text/javascript'>
+googletag.cmd.push(function() {
+googletag.defineSlot('/1234152/radiokot-220x250', [220, 250], 'div-gpt-ad-1376913563587-0').addService(googletag.pubads());
+googletag.defineSlot('/1234152/radiokot-500x100', [500, 100], 'div-gpt-ad-1376913563587-1').addService(googletag.pubads());
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script>
+
+</head>
+<body>
+
+<div id="main">
+  <div id="find_datasheet">
+      <div id="find_datasheet_form"><div id="collapse" onclick="collapse_tag('find_datasheet', 'find_datasheet_form');"><img src="http://radiokot.ru/templates/radiokot_classic/images/datasheet.png" /></div>
+      <form name="searching" method="get" action="http://www.datasheet4u.com/share_search.php" target="blank">
+      <div align="center"><font size="2">Например TDA7294</font>
+      <input size="30" name="sWord" style="background-color:CCFFCC;"><br>
+      <input type="submit" value="Поиск" style="background-color:EAAA88; color:990000; margin-top:5px; width: 100px">
+      </div>
+      </form>
+      </div>
+  </div>
+
+  <div id="kot_body"></div>
+  <div id="kot_head"></div>
+  <div id="kot_rraw"></div>
+  <div id="kot_lraw"></div>
+  <div id="kot_hvost"></div>
+  <div id="site_name"></div>
+
+  <div id="right_cont">
+        <div id="rinfo">
+   <br>
+    </div>
+    <div id="findbar">
+    <form  METHOD="GET" ACTION="http://radiokot.ru/search/">
+    <img src="http://radiokot.ru/templates/radiokot_classic/images/find.png" style="vertical-align: bottom;">
+    <input type="text" name="query" size="25" class="relief">
+    <input type="image" src="http://radiokot.ru/templates/radiokot_classic/images/ok.png" alt="ok" style="vertical-align: bottom;">
+    </form>
+    </div>
+  </div>
+
+  <div id="menu" style="width: 90%">
+    <div id="btn1"><a href="http://radiokot.ru" class="mmenu">Главная</a></div>
+    <div id="btn2"><a href="http://radiokot.ru/circuit" class="mmenu">Схемы</a></div>
+    <div id="btn3"><a href="http://radiokot.ru/lab" class="mmenu">Лаборатория</a></div>
+    <div id="btn4"><a href="http://radiokot.ru/articles" class="mmenu">Статьи</a></div>
+    <div id="btn5"><a href="http://radiokot.ru/start" class="mmenu">Обучалка</a></div>
+    <div id="btn6"><a href="http://radiokot.ru/links" class="mmenu">Ссылки</a></div>
+    <div id="btn7"><a href="http://radiokot.ru/inquiry" class="mmenu">Справочник</a></div>
+    <div id="btn8"><a href="http://radiokot.ru/art" class="mmenu">КотАрт</a></div>
+    <div id="btn9"><a href="http://radiokot.ru/about" class="mmenu">О проекте</a></div>
+    <div id="btn10"><a href="http://radiokot.ru/forum" class="mmenu">Форум</a></div>
+	
+	
+	
+	
+</div>
+  
+  <div id="plata">
+   <div id="dorogi"><img src="http://radiokot.ru/templates/radiokot_classic/images/dorogi.png" width="680px" height="286px"></div>
+   <table id="platatb" width="100%" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+    <td></td>
+    <td colspan="3"><img src="/images/pix.gid" width="940" height="1"></td>
+    <td></td>
+    </tr>   
+    <tr height="145" valign="top">
+     <td width="28"><img src="http://radiokot.ru/templates/radiokot_classic/images/content/lefttb.png" border="0"></td>
+     <td background="http://radiokot.ru/templates/radiokot_classic/images/content/centrtb.png" width="100%"></td>
+
+     <td width="32"><img src="http://radiokot.ru/templates/radiokot_classic/images/content/righttb.png" width="32" height="148"></td>
+    </tr>
+    <tr>
+     <td background="http://radiokot.ru/templates/radiokot_classic/images/content/rightcont.png" width="28"></td>
+     <td bgcolor="#F6CB8B">
+        
+     <div id="content">
+     <div id="centr_field">
+     <div id="news_cnt">
+
+
+
+     <div id="content_txt">
+     <div id="hypercontext">
+<index><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-language" content="ru-ru" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="copyright" content="2000, 2002, 2005, 2007 phpBB Group" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9" />
+
+<title>Форум РадиоКот &bull; Просмотр темы - &quot;Дозиметр Сталкера&quot;</title>
+
+<div id="content1" align="center" style="margin:0 0 0 35px; width:98%;">
+
+
+
+<link rel="stylesheet" href="./styles/RK_THEME/theme/stylesheet.css" type="text/css" />
+
+
+<script type="text/javascript">
+// <![CDATA[
+
+
+function popup(url, width, height, name)
+{
+	if (!name)
+	{
+		name = '_popup';
+	}
+
+	window.open(url.replace(/&amp;/g, '&'), name, 'height=' + height + ',resizable=yes,scrollbars=yes,width=' + width);
+	return false;
+}
+
+function jumpto()
+{
+	var page = prompt('Введите номер страницы, на которую Вы хотели бы перейти:', '1');
+	var per_page = '20';
+	var base_url = './viewtopic.php?f=25&amp;t=58813';
+
+	if (page !== null && !isNaN(page) && page == Math.floor(page) && page > 0)
+	{
+		if (base_url.indexOf('?') == -1)
+		{
+			document.location.href = base_url + '?start=' + ((page - 1) * per_page);
+		}
+		else
+		{
+			document.location.href = base_url.replace(/&amp;/g, '&') + '&start=' + ((page - 1) * per_page);
+		}
+	}
+}
+
+/**
+* Find a member
+*/
+function find_username(url)
+{
+	popup(url, 760, 570, '_usersearch');
+	return false;
+}
+
+/**
+* Mark/unmark checklist
+* id = ID of parent container, name = name prefix, state = state [true/false]
+*/
+function marklist(id, name, state)
+{
+	var parent = document.getElementById(id);
+	if (!parent)
+	{
+		eval('parent = document.' + id);
+	}
+
+	if (!parent)
+	{
+		return;
+	}
+
+	var rb = parent.getElementsByTagName('input');
+
+	for (var r = 0; r < rb.length; r++)
+	{
+		if (rb[r].name.substr(0, name.length) == name)
+		{
+			rb[r].checked = state;
+		}
+	}
+}
+
+
+
+	/**
+	* Play quicktime file by determining it's width/height
+	* from the displayed rectangle area
+	*
+	* Only defined if there is a file block present.
+	*/
+	function play_qt_file(obj)
+	{
+		var rectangle = obj.GetRectangle();
+
+		if (rectangle)
+		{
+			rectangle = rectangle.split(',')
+			var x1 = parseInt(rectangle[0]);
+			var x2 = parseInt(rectangle[2]);
+			var y1 = parseInt(rectangle[1]);
+			var y2 = parseInt(rectangle[3]);
+
+			var width = (x1 < 0) ? (x1 * -1) + x2 : x2 - x1;
+			var height = (y1 < 0) ? (y1 * -1) + y2 : y2 - y1;
+		}
+		else
+		{
+			var width = 200;
+			var height = 0;
+		}
+
+		obj.width = width;
+		obj.height = height + 16;
+
+		obj.SetControllerVisible(true);
+
+		obj.Play();
+	}
+
+
+// ]]>
+</script>
+
+<!-- [+] Karma MOD //-->
+	<script type="text/javascript" src="./includes/mods/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="./includes/mods/jquery.form.js"></script>
+	<script type="text/javascript" src="./includes/mods/jquery.karma.js?v=2"></script>
+<!-- [-] Karma MOD //--><!-- [+] Topic Tags MOD -->
+<script type="text/javascript" src="./includes/mods/jquery.autocomplete.min.js"></script>
+<script type="text/javascript" src="./includes/mods/jquery.tagsinput.min.js"></script>
+<script type="text/javascript" src="./includes/mods/jquery.class.animation.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./styles/RK_THEME/theme/jquery.autocomplete.css" />
+<link rel="stylesheet" type="text/css" href="./styles/RK_THEME/theme/jquery.tagsinput.css?_v=1" />
+<!-- [-] Topic Tags MOD -->
+
+
+<a name="top"></a>
+
+<div id="wrapheader">
+
+
+	<div id="logodesc">
+		<table width="100%" cellspacing="0">
+		<tr>
+<td width="100%" align="center"><font size="+1"><b>Форум РадиоКот</b></font><br><span class="gen">Здесь можно немножко помяукать :)</span>
+<br><br>
+<noindex>
+<a href="http://www.prist.ru/main/news/291216.htm"><img src="http://prist.ru/img/misc/mfg-72000.gif"  border="0" /></a>
+<!--
+  <a href="mailto:kot@radiokot.ru"><img src="http://radiokot.ru/adv/radiokot/1.gif"  border="0" /></a>
+-->
+<br><br>
+<a href="http://www.compacttool.ru/"><img src="http://radiokot.ru/adv/CellFaktor/02.gif"  border="0" /></a>
+
+</noindex>
+</td>
+<td><a href="./index.php"><img src="./styles/RK_THEME/imageset/lapa.png" alt="" title="" /></a>
+</td>
+		</tr>
+		</table>
+	</div>
+
+
+
+
+
+
+
+	<div id="menubar">
+		<table width="100%" cellspacing="0">
+		<tr>
+			<td class="genmed">
+				<a href="./ucp.php?mode=login"><img src="./styles/RK_THEME/theme/images/icon_mini_login.gif" width="12" height="13" alt="*" /> Вход</a>&nbsp; &nbsp;<a href="./ucp.php?mode=register"><img src="./styles/RK_THEME/theme/images/icon_mini_register.gif" width="12" height="13" alt="*" /> Регистрация</a>
+					
+			</td>
+			<td class="genmed" align="right">
+				<a href="/forum/viewtopic.php?f=19&t=6538" style="color: red; font-size: 1.1em; font-weight: bold;"><img src="./styles/RK_THEME/theme/images/icon_mini_rules.gif" width="12" height="13" alt="*" /> Правила</a>
+				<a href="./faq.php"><img src="./styles/RK_THEME/theme/images/icon_mini_faq.gif" width="12" height="13" alt="*" /> FAQ</a>
+				&nbsp; &nbsp;<a href="./search.php"><img src="./styles/RK_THEME/theme/images/icon_mini_search.gif" width="12" height="13" alt="*" /> Поиск</a>
+			</td>
+		</tr>
+		</table>
+	</div>
+
+	<div id="datebar">
+		<table width="100%" cellspacing="0">
+		<tr>
+			<td class="gensmall"></td>
+			<td class="gensmall" align="right">Текущее время: Пт мар 17, 2017 17:54:42<br /></td>
+		</tr>
+		</table>
+	</div>
+
+</div>
+
+<div id="wrapcentre">
+
+	
+	<p class="searchbar">
+		<span style="float: left;"><a href="./search.php?search_id=unanswered">Сообщения без ответов</a> | <a href="./search.php?search_id=active_topics">Активные темы</a></span>
+		
+	</p>
+	
+
+	<br style="clear: both;" />
+
+	﻿<table class="tablebg" width="100%" cellspacing="1" cellpadding="0" style="margin-top: 5px;">
+	<tr>
+		<td class="row1">
+			<p class="breadcrumbs"><a href="./index.php">Список форумов</a> &#187; <a href="./viewforum.php?f=36">Наш сайт</a> &#187; <a href="./viewforum.php?f=25">Статьи</a></p>
+                        <p align="center">
+			<a style="color: red; font-size: 1.1em; font-weight: bold; align: center;" href="http://labaz.radiokot.ru">Лабаз У Кота. Там столько вкусного!</a>
+			</p>
+			<p class="datetime">Часовой пояс: UTC + 3 часа [ Летнее время ]</p>
+		</td>
+	</tr>
+	</table>
+
+	<br />
+
+<div id="pageheader">
+	<h2 align="left"><a class="titles" href="./viewtopic.php?f=25&amp;t=58813">&quot;Дозиметр Сталкера&quot;</a></h2>
+
+<!-- [+] Topic Tags MOD -->
+	<style>
+	div.tagsinput span.tag span { padding-left: 6px; }
+	div.tagsinput span.tag a { display: none; }
+	</style>
+	
+
+	<script type="text/javascript">
+	//<![CDATA[
+	$(function() {
+		// Prepare variables
+		var
+			tagNumber = 0;
+
+		
+
+		$('#topictags').tagsInput(
+			{
+				
+
+				onChange:	function($input, tagName)
+				{
+					// Ignore malformed call
+					if (tagName === undefined)
+					{
+						return;
+					} // if (this === undefined)
+
+					// Extend tag element
+					$input
+						.next('.tagsinput')
+							.find('.tag:eq(' + tagNumber + ')')
+								.on(
+									'click',
+									function(event)
+									{
+										// Go to search page
+										window.location.assign('./search.php?keywords=' + tagName + '&fid[]=25&sc=1&terms=tag&sf=tag&sr=topics&submit=Search');
+
+										// Prevent default action
+										return false;
+									} // function()
+								) // on()
+								.css('cursor', 'pointer');
+
+					tagNumber += 1;
+
+
+				}, // onChange: function()
+
+				height:	'auto',
+				width:	'100%',
+
+				defaultText:	'Добавить узелок...',
+
+				removeWithBackspace:	false,
+				interactive:	false
+			}
+		);
+
+		
+	});
+	//]]>
+	</script>
+
+	<div>
+		<div style="line-height: 40px; height: 40px; float: left; font-weight: bold; font-family: Verdana, Arial, Helvetica, sans-serif; color: #069;">Узелки:</div>
+		<form style="float: left;">
+			<input type="text" name="topic_tags" id="topictags" size="45" tabindex="3" value="Дозиметр,S.T.A.L.K.E.R.,Счетчик Гейгера" class="autowidth tags" data-value="Дозиметр,S.T.A.L.K.E.R.,Счетчик Гейгера" />
+		</form>
+
+		<div style="clear: both;"></div>
+	</div>
+<!-- [-] Topic Tags MOD -->
+</div>
+
+<br clear="all" /><br />
+
+<div id="pagecontent">
+
+	<table width="100%" cellspacing="1">
+	<tr>
+		<td align="left" valign="middle" nowrap="nowrap">
+		<a href="./posting.php?mode=post&amp;f=25"><img src="./styles/RK_THEME/imageset/ru/post.gif" alt="Начать новую тему" title="Начать новую тему" /></a>&nbsp;<a href="./posting.php?mode=reply&amp;f=25&amp;t=58813"><img src="./styles/RK_THEME/imageset/ru/reply.gif" alt="Ответить на тему" title="Ответить на тему" /></a>
+		</td>
+		
+			<td class="nav" valign="middle" nowrap="nowrap">&nbsp;Страница <strong>1</strong> из <strong>182</strong><br /></td>
+			<td class="gensmall" nowrap="nowrap">&nbsp;[ Сообщений: 3625 ]&nbsp;</td>
+			<td class="gensmall" width="100%" align="right" nowrap="nowrap"><b><a href="#" onclick="jumpto(); return false;" title="Перейти на страницу…">На страницу</a> <strong>1</strong><span class="page-sep">, </span><a href="./viewtopic.php?f=25&amp;t=58813&amp;start=20">2</a><span class="page-sep">, </span><a href="./viewtopic.php?f=25&amp;t=58813&amp;start=40">3</a><span class="page-sep">, </span><a href="./viewtopic.php?f=25&amp;t=58813&amp;start=60">4</a><span class="page-sep">, </span><a href="./viewtopic.php?f=25&amp;t=58813&amp;start=80">5</a><span class="page-dots"> ... </span><a href="./viewtopic.php?f=25&amp;t=58813&amp;start=3620">182</a> &nbsp;<a href="./viewtopic.php?f=25&amp;t=58813&amp;start=20">След.</a></b></td>
+		
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr>
+		<td class="cat">
+			<table width="100%" cellspacing="0">
+			<tr>
+				<td class="nav" nowrap="nowrap">&nbsp;
+				<a href="./viewtopic.php?f=25&amp;t=58813&amp;view=print" title="Для печати">Для печати</a>
+				</td>
+				<td class="nav" align="right" nowrap="nowrap"><a href="./viewtopic.php?f=25&amp;t=58813&amp;view=previous">Предыдущая тема</a> | <a href="./viewtopic.php?f=25&amp;t=58813&amp;view=next">Следующая тема</a>&nbsp;</td>
+			</tr>
+			</table>
+		</td>
+	</tr>
+
+	</table>
+
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	
+		<tr>
+			<th>Автор</th>
+			<th>Сообщение</th>
+		</tr>
+	<tr class="row1">
+
+			<td align="center" valign="middle">
+				<a name="p1034997"></a>
+				<b class="postauthor">ELcat</b>
+		
+				<img src="./styles/RK_THEME/imageset/folder_lock.gif" alt="Не в сети" title="Не в сети" />
+			
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Заголовок сообщения:</b> &quot;Дозиметр Сталкера&quot;</div><div style="float: right;"><a href="./viewtopic.php?p=1034997#p1034997"><img src="./styles/RK_THEME/imageset/icon_post_target.gif" width="12" height="9" alt="Сообщение" title="Сообщение" /></a><b>Добавлено:</b> Пн ноя 21, 2011 17:15:31&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+
+			
+				<tr>
+					<td class="postdetails">Друг Кота</td>
+				</tr>
+			
+				<tr>
+					<td><img src="./download/file.php?avatar=11907_1447531746.png" width="120" height="120" alt="Аватар пользователя" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<!-- [+] Karma MOD --><br /><b>Карма:</b> 44<br /><b>Зарегистрирован:</b> Вт май 19, 2009 10:27:30<br /><b>Сообщений:</b> 3578<br /><b>Откуда:</b> Украина<!-- [+] Karma MOD -->
+						<br />
+						
+							<b>Рейтинг сообщения:</b> <span class="Karma-Data-Post-Value" data-post="1034997">7</span>
+						<!-- [-] Karma MOD -->
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">Здравствуйте, уважаемые Коты! Если у кого возникнут трудности с повторением конструкции &quot;Дозиметр Сталкера&quot; <!-- m --><a class="postlink" href="http://www.radiokot.ru/circuit/digital/measure/60/">http://www.radiokot.ru/circuit/digital/measure/60/</a><!-- m -->, или возникнут идеи по её доработке - с радостью помогу советом!</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><strong><a href="#wrapheader">Вернуться наверх</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=11907"><img src="./styles/RK_THEME/imageset/ru/icon_user_profile.gif" alt="Профиль" title="Профиль" /></a> 
+
+
+&nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+<!--Ad after 1st and 5th posts-->
+
+
+
+<table class="tablebg" width="100%" cellspacing="0">
+<tr class="row1">
+
+<td class="profile" align="center" valign="middle">
+<b class="postauthor">Реклама</b>
+</td>
+<td class="row3h" width="100%">
+</td>
+</tr>
+
+<tr class="row1">
+
+<td valign="top" class="profile">
+<table cellspacing="4" align="center" width="150">
+
+</table>
+
+<span class="postdetails">
+
+</span>
+
+</td>
+<td valign="top" colspan="2">
+<table width="100%" cellspacing="5">
+<tr>
+<td>
+<table width="100%" cellspacing="0">
+<tr valign="middle">
+<td class="gensmall" align="right">
+
+</td>
+</tr>
+</table>
+<div class="postbody">
+<!-- ������.������ -->
+<div id="yandex_ad"></div>
+<script type="text/javascript">
+(function(w, d, n, s, t) {
+    w[n] = w[n] || [];
+    w[n].push(function() {
+        Ya.Direct.insertInto(62247, "yandex_ad", {
+            ad_format: "direct",
+            font_size: 1,
+            type: "horizontal",
+            limit: 4,
+            title_font_size: 1,
+            links_underline: true,
+            site_bg_color: "FFFFCC",
+            header_bg_color: "FEEAC7",
+            title_color: "0000CC",
+            url_color: "006600",
+            text_color: "000000",
+            hover_color: "0066FF",
+            sitelinks_color: "0000CC",
+            favicon: true,
+            no_sitelinks: false
+        });
+    });
+    t = d.getElementsByTagName("script")[0];
+    s = d.createElement("script");
+    s.src = "//an.yandex.ru/system/context.js";
+    s.type = "text/javascript";
+    s.async = true;
+    t.parentNode.insertBefore(s, t);
+})(window, document, "yandex_context_callbacks");
+</script>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr class="row1">
+
+<td align="center" class="profile">
+
+</td>
+<td colspan="2"></td>
+</tr>
+
+<tr>
+<td class="spacer" colspan="3" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+</tr>
+</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td align="center" valign="middle">
+				<a name="p1035105"></a>
+				<b class="postauthor">Aleksey08</b>
+		
+				<img src="./styles/RK_THEME/imageset/folder_lock.gif" alt="Не в сети" title="Не в сети" />
+			
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Заголовок сообщения:</b> Re: &quot;Дозиметр Сталкера&quot;</div><div style="float: right;"><a href="./viewtopic.php?p=1035105#p1035105"><img src="./styles/RK_THEME/imageset/icon_post_target.gif" width="12" height="9" alt="Сообщение" title="Сообщение" /></a><b>Добавлено:</b> Пн ноя 21, 2011 18:56:27&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+
+			
+				<tr>
+					<td class="postdetails">Встал на лапы</td>
+				</tr>
+			
+				<tr>
+					<td><img src="./download/file.php?avatar=32740_1299648584.jpg" width="80" height="80" alt="Аватар пользователя" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<!-- [+] Karma MOD --><br /><b>Зарегистрирован:</b> Пн фев 21, 2011 18:35:41<br /><b>Сообщений:</b> 81<br /><b>Откуда:</b> Красноярск<!-- [+] Karma MOD -->
+						<br />
+						
+							<b>Рейтинг сообщения:</b> <span class="Karma-Data-Post-Value" data-post="1035105">0</span>
+						<!-- [-] Karma MOD -->
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody"><div class="quotetitle">ELcat писал(а):</div><div class="quotecontent">Здравствуйте, уважаемые Коты! Если у кого возникнут трудности с повторением конструкции &quot;Дозиметр Сталкера&quot; <!-- m --><a class="postlink" href="http://www.radiokot.ru/circuit/digital/measure/60/">http://www.radiokot.ru/circuit/digital/measure/60/</a><!-- m -->, или возникнут идеи по её доработке - с радостью помогу советом!</div><br />Здравствуйте ELcat, очень заинтересовала ваша работа))) Захотелось повторить, буду очень признателен если поделитесь принципиальной схемой или списком необходимых элементов. Заранее спасибо.</div>
+
+					
+						<span class="postbody"><br />_________________<br />Самые лучшие источники информации - это университетская библиотека, городской архив, интернет и утюг.</span>
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><strong><a href="#wrapheader">Вернуться наверх</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=32740"><img src="./styles/RK_THEME/imageset/ru/icon_user_profile.gif" alt="Профиль" title="Профиль" /></a> 
+
+
+&nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+<!--Ad after 1st and 5th posts-->
+
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+
+			<td align="center" valign="middle">
+				<a name="p1035136"></a>
+				<b class="postauthor">alexx82</b>
+		
+				<img src="./styles/RK_THEME/imageset/folder_lock.gif" alt="Не в сети" title="Не в сети" />
+			
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Заголовок сообщения:</b> Re: &quot;Дозиметр Сталкера&quot;</div><div style="float: right;"><a href="./viewtopic.php?p=1035136#p1035136"><img src="./styles/RK_THEME/imageset/icon_post_target.gif" width="12" height="9" alt="Сообщение" title="Сообщение" /></a><b>Добавлено:</b> Пн ноя 21, 2011 19:29:31&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+
+			
+				<tr>
+					<td class="postdetails">Открыл глаза</td>
+				</tr>
+			
+				<tr>
+					<td><img src="./download/file.php?avatar=39833_1310047622.jpg" width="80" height="95" alt="Аватар пользователя" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<!-- [+] Karma MOD --><br /><b>Карма:</b> 2<br /><b>Зарегистрирован:</b> Ср июл 06, 2011 20:11:44<br /><b>Сообщений:</b> 64<br /><b>Откуда:</b> В цветущих акациях город<!-- [+] Karma MOD -->
+						<br />
+						
+							<b>Рейтинг сообщения:</b> <span class="Karma-Data-Post-Value" data-post="1035136">0</span>
+						<!-- [-] Karma MOD -->
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody"><strong>ELcat</strong><br /><br />Интересно, каким образом можно повторить данное устройство без принципиальной схемы?  <img src="./images/smilies/dont_know.gif" alt=":dont_know:" title="Да пес его знает..." />  Одной лишь печатки для этого мало.</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><strong><a href="#wrapheader">Вернуться наверх</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=39833"><img src="./styles/RK_THEME/imageset/ru/icon_user_profile.gif" alt="Профиль" title="Профиль" /></a> 
+
+
+&nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+<!--Ad after 1st and 5th posts-->
+
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td align="center" valign="middle">
+				<a name="p1035253"></a>
+				<b class="postauthor">ELcat</b>
+		
+				<img src="./styles/RK_THEME/imageset/folder_lock.gif" alt="Не в сети" title="Не в сети" />
+			
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Заголовок сообщения:</b> Re: &quot;Дозиметр Сталкера&quot;</div><div style="float: right;"><a href="./viewtopic.php?p=1035253#p1035253"><img src="./styles/RK_THEME/imageset/icon_post_target.gif" width="12" height="9" alt="Сообщение" title="Сообщение" /></a><b>Добавлено:</b> Пн ноя 21, 2011 20:46:29&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+
+			
+				<tr>
+					<td class="postdetails">Друг Кота</td>
+				</tr>
+			
+				<tr>
+					<td><img src="./download/file.php?avatar=11907_1447531746.png" width="120" height="120" alt="Аватар пользователя" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<!-- [+] Karma MOD --><br /><b>Карма:</b> 44<br /><b>Зарегистрирован:</b> Вт май 19, 2009 10:27:30<br /><b>Сообщений:</b> 3578<br /><b>Откуда:</b> Украина<!-- [+] Karma MOD -->
+						<br />
+						
+							<b>Рейтинг сообщения:</b> <span class="Karma-Data-Post-Value" data-post="1035253">6</span>
+						<!-- [-] Karma MOD -->
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">Когда откроете файл печатной платы - увидете на каждом элементе маркировку мелким шрифтом.  <img src="./images/smilies/to_write.gif" alt=":write:" title="Оперу пишу" /><br /><br /><span style="color: #FF4040">ВНИМАНИЕ! Для оригинального дисплея NOKIA3310 использовать прошивку &quot;китайский с дугой&quot;.</span> Файлы прошивки обозначены Ch=1 для китайского дисплея и Ch=0 для &quot;оригинала&quot;.<br /><br /> <span style="color: #FF40BF"><a href="http://www.youtube.com/watch?v=ZY1BtTgLfEQ" class="postlink">ВИДЕО РАБОТЫ</a></span></div>
+
+					
+						<br clear="all" /><br />
+
+						<table class="tablebg" width="100%" cellspacing="1">
+						<tr>
+							<td class="row3"><b class="genmed">Вложения: </b></td>
+						</tr>
+						
+							<tr>
+								<td class="row2">
+			<span class="gensmall"><b>Комментарий к файлу:</b> Самая популярная версия прошивки</span><br />
+		
+			<span class="genmed">
+				<img src="./styles/RK_THEME/imageset/icon_clip.gif" alt="" title="" /> 
+				<a href="./download/file.php?id=144496">DozV1.3b_by_Schegol.zip</a> [19.15 KiB]
+			</span><br />
+			<span class="gensmall">Скачиваний: 1175</span>
+		
+
+		<br />
+	</td>
+							</tr>
+						
+							<tr>
+								<td class="row1">
+			<span class="gensmall"><b>Комментарий к файлу:</b> Последняя версия &quot;прошивки&quot;</span><br />
+		
+			<span class="genmed">
+				<img src="./styles/RK_THEME/imageset/icon_clip.gif" alt="" title="" /> 
+				<a href="./download/file.php?id=144495">Ver.1.4_by_Schegol.zip</a> [19.52 KiB]
+			</span><br />
+			<span class="gensmall">Скачиваний: 928</span>
+		
+
+		<br />
+	</td>
+							</tr>
+						
+							<tr>
+								<td class="row2">
+			<span class="gensmall"><b>Комментарий к файлу:</b> Последняя версия прошивки</span><br />
+		
+			<span class="genmed">
+				<img src="./styles/RK_THEME/imageset/icon_clip.gif" alt="" title="" /> 
+				<a href="./download/file.php?id=144470">Ver.1.5_by_Arhar.zip</a> [19.44 KiB]
+			</span><br />
+			<span class="gensmall">Скачиваний: 1100</span>
+		
+
+		<br />
+	</td>
+							</tr>
+						
+							<tr>
+								<td class="row1">
+			<span class="gensmall"><b>Комментарий к файлу:</b> Схема (последняя версия)</span><br />
+		
+			<span class="genmed">
+				<img src="./styles/RK_THEME/imageset/icon_clip.gif" alt="" title="" /> 
+				<a href="./download/file.php?id=143798">DozimetrNG.GIF</a> [105.31 KiB]
+			</span><br />
+			<span class="gensmall">Скачиваний: 3494</span>
+		
+
+		<br />
+	</td>
+							</tr>
+						
+							<tr>
+								<td class="row2">
+			<span class="gensmall"><b>Комментарий к файлу:</b> Печатная плата (последняя версия)</span><br />
+		
+			<span class="genmed">
+				<img src="./styles/RK_THEME/imageset/icon_clip.gif" alt="" title="" /> 
+				<a href="./download/file.php?id=143795">DozimeterNG.zip</a> [93.4 KiB]
+			</span><br />
+			<span class="gensmall">Скачиваний: 1592</span>
+		
+
+		<br />
+	</td>
+							</tr>
+						
+							<tr>
+								<td class="row1">
+			<span class="gensmall"><b>Комментарий к файлу:</b> Скрин фуз-битов для ПониПрог</span><br />
+		
+			<span class="genmed">
+				<img src="./styles/RK_THEME/imageset/icon_clip.gif" alt="" title="" /> 
+				<a href="./download/file.php?id=143790">STALKER_Fuses.PNG</a> [12.69 KiB]
+			</span><br />
+			<span class="gensmall">Скачиваний: 2003</span>
+		
+
+		<br />
+	</td>
+							</tr>
+						
+						</table>
+					
+							<br /><br />
+							<span class="gensmall">Последний раз редактировалось <a href="./memberlist.php?mode=viewprofile&amp;u=11907">ELcat</a> Пт июн 08, 2012 18:55:46, всего редактировалось 24 раз(а).</span>
+						
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><strong><a href="#wrapheader">Вернуться наверх</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=11907"><img src="./styles/RK_THEME/imageset/ru/icon_user_profile.gif" alt="Профиль" title="Профиль" /></a> 
+
+
+&nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+<!--Ad after 1st and 5th posts-->
+
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+
+			<td align="center" valign="middle">
+				<a name="p1035265"></a>
+				<b class="postauthor">ELcat</b>
+		
+				<img src="./styles/RK_THEME/imageset/folder_lock.gif" alt="Не в сети" title="Не в сети" />
+			
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Заголовок сообщения:</b> Re: &quot;Дозиметр Сталкера&quot;</div><div style="float: right;"><a href="./viewtopic.php?p=1035265#p1035265"><img src="./styles/RK_THEME/imageset/icon_post_target.gif" width="12" height="9" alt="Сообщение" title="Сообщение" /></a><b>Добавлено:</b> Пн ноя 21, 2011 20:54:28&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+
+			
+				<tr>
+					<td class="postdetails">Друг Кота</td>
+				</tr>
+			
+				<tr>
+					<td><img src="./download/file.php?avatar=11907_1447531746.png" width="120" height="120" alt="Аватар пользователя" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<!-- [+] Karma MOD --><br /><b>Карма:</b> 44<br /><b>Зарегистрирован:</b> Вт май 19, 2009 10:27:30<br /><b>Сообщений:</b> 3578<br /><b>Откуда:</b> Украина<!-- [+] Karma MOD -->
+						<br />
+						
+							<b>Рейтинг сообщения:</b> <span class="Karma-Data-Post-Value" data-post="1035265">0</span>
+						<!-- [-] Karma MOD -->
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">Сразу сделаю маленькую оговорочку - код в моих исходниках жутко не оптимальный. Просто в программировании я новичек. Кроме того заработало как мне хотелось, вот я и оставил всё так как есть. Но кто захочет покопаться - там целый простор для оптимизации. По моим прикидкам оптимизацией код можно сократить в 3-4 раза, освободив место под какие-нибудь дополнительные ифункции, например.</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><strong><a href="#wrapheader">Вернуться наверх</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=11907"><img src="./styles/RK_THEME/imageset/ru/icon_user_profile.gif" alt="Профиль" title="Профиль" /></a> 
+
+
+&nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+<!--Ad after 1st and 5th posts-->
+
+
+
+<table class="tablebg" width="100%" cellspacing="0">
+<tr class="row1">
+
+<td class="profile" align="center" valign="middle">
+<b class="postauthor">Реклама</b>
+</td>
+<td class="row3h" width="100%">
+</td>
+</tr>
+
+<tr class="row1">
+
+<td valign="top" class="profile">
+<table cellspacing="4" align="center" width="150">
+
+</table>
+
+<span class="postdetails">
+
+</span>
+
+</td>
+<td valign="top" colspan="2">
+<table width="100%" cellspacing="5">
+<tr>
+<td>
+<table width="100%" cellspacing="0">
+<tr valign="middle">
+<td class="gensmall" align="right">
+
+</td>
+</tr>
+</table>
+<div class="postbody">
+<!-- ������.������ -->
+<div id="yandex_ad"></div>
+<script type="text/javascript">
+(function(w, d, n, s, t) {
+    w[n] = w[n] || [];
+    w[n].push(function() {
+        Ya.Direct.insertInto(62247, "yandex_ad", {
+            ad_format: "direct",
+            font_size: 1,
+            type: "horizontal",
+            limit: 4,
+            title_font_size: 1,
+            links_underline: true,
+            site_bg_color: "FFFFCC",
+            header_bg_color: "FEEAC7",
+            title_color: "0000CC",
+            url_color: "006600",
+            text_color: "000000",
+            hover_color: "0066FF",
+            sitelinks_color: "0000CC",
+            favicon: true,
+            no_sitelinks: false
+        });
+    });
+    t = d.getElementsByTagName("script")[0];
+    s = d.createElement("script");
+    s.src = "//an.yandex.ru/system/context.js";
+    s.type = "text/javascript";
+    s.async = true;
+    t.parentNode.insertBefore(s, t);
+})(window, document, "yandex_context_callbacks");
+</script>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr class="row1">
+
+<td align="center" class="profile">
+
+</td>
+<td colspan="2"></td>
+</tr>
+
+<tr>
+<td class="spacer" colspan="3" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+</tr>
+</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td align="center" valign="middle">
+				<a name="p1035354"></a>
+				<b class="postauthor">BigallS</b>
+		
+				<img src="./styles/RK_THEME/imageset/folder_lock.gif" alt="Не в сети" title="Не в сети" />
+			
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Заголовок сообщения:</b> Re: &quot;Дозиметр Сталкера&quot;</div><div style="float: right;"><a href="./viewtopic.php?p=1035354#p1035354"><img src="./styles/RK_THEME/imageset/icon_post_target.gif" width="12" height="9" alt="Сообщение" title="Сообщение" /></a><b>Добавлено:</b> Пн ноя 21, 2011 22:05:27&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+
+			
+				<tr>
+					<td class="postdetails">Вымогатель припоя</td>
+				</tr>
+			
+				<tr>
+					<td><img src="./download/file.php?avatar=35938_1352921219.jpg" width="60" height="80" alt="Аватар пользователя" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<!-- [+] Karma MOD --><br /><b>Карма:</b> 1<br /><b>Зарегистрирован:</b> Пт апр 15, 2011 22:11:22<br /><b>Сообщений:</b> 669<br /><b>Откуда:</b> Россия, Ставропольский край<!-- [+] Karma MOD -->
+						<br />
+						
+							<b>Рейтинг сообщения:</b> <span class="Karma-Data-Post-Value" data-post="1035354">0</span>
+						<!-- [-] Karma MOD -->
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody"><div class="quotetitle">ELcat писал(а):</div><div class="quotecontent">Сразу сделаю маленькую оговорочку - код в моих исходниках жутко не оптимальный. Просто в программировании я новичек. Кроме того заработало как мне хотелось, вот я и оставил всё так как есть. Но кто захочет покопаться - там целый простор для оптимизации. По моим прикидкам оптимизацией код можно сократить в 3-4 раза, освободив место под какие-нибудь дополнительные ифункции, например.</div><br /><br />Ждёмс схему, нашёл у себя дозиметр ещё советский &quot;Элат СИМ-3&quot;, давно ждал своего часа. Доделаю &quot;Хамелеон&quot; и возьмусь за него. Прочитал статью, но один вопрос мне не понятен, как производили поверку прибора?</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><strong><a href="#wrapheader">Вернуться наверх</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=35938"><img src="./styles/RK_THEME/imageset/ru/icon_user_profile.gif" alt="Профиль" title="Профиль" /></a> 
+
+
+&nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+<!--Ad after 1st and 5th posts-->
+
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+
+			<td align="center" valign="middle">
+				<a name="p1035397"></a>
+				<b class="postauthor">Upgrader</b>
+		
+				<img src="./styles/RK_THEME/imageset/folder_lock.gif" alt="Не в сети" title="Не в сети" />
+			
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Заголовок сообщения:</b> Re: &quot;Дозиметр Сталкера&quot;</div><div style="float: right;"><a href="./viewtopic.php?p=1035397#p1035397"><img src="./styles/RK_THEME/imageset/icon_post_target.gif" width="12" height="9" alt="Сообщение" title="Сообщение" /></a><b>Добавлено:</b> Пн ноя 21, 2011 22:43:09&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+
+			
+				<tr>
+					<td class="postdetails">Друг Кота</td>
+				</tr>
+			
+				<tr>
+					<td><img src="./download/file.php?avatar=2892_1442914305.png" width="120" height="90" alt="Аватар пользователя" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<!-- [+] Karma MOD --><br /><b>Карма:</b> 64<br /><b>Зарегистрирован:</b> Пт май 18, 2007 23:56:58<br /><b>Сообщений:</b> 13161<!-- [+] Karma MOD -->
+						<br />
+						
+							<b>Рейтинг сообщения:</b> <span class="Karma-Data-Post-Value" data-post="1035397">0</span>
+						<!-- [-] Karma MOD -->
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">Очень ждем схему, с добавлением ее в статью надеюсь проблем не будет.</div>
+
+					
+						<span class="postbody"><br />_________________<br /><span style="font-size: 85%; line-height: normal">Напоминайте в личке, если что.</span></span>
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><strong><a href="#wrapheader">Вернуться наверх</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=2892"><img src="./styles/RK_THEME/imageset/ru/icon_user_profile.gif" alt="Профиль" title="Профиль" /></a> 
+
+
+&nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+<!--Ad after 1st and 5th posts-->
+
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td align="center" valign="middle">
+				<a name="p1035533"></a>
+				<b class="postauthor">miro</b>
+		
+				<img src="./styles/RK_THEME/imageset/folder_lock.gif" alt="Не в сети" title="Не в сети" />
+			
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Заголовок сообщения:</b> Re: &quot;Дозиметр Сталкера&quot;</div><div style="float: right;"><a href="./viewtopic.php?p=1035533#p1035533"><img src="./styles/RK_THEME/imageset/icon_post_target.gif" width="12" height="9" alt="Сообщение" title="Сообщение" /></a><b>Добавлено:</b> Вт ноя 22, 2011 09:03:02&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+
+			
+				<tr>
+					<td class="postdetails">Родился</td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<!-- [+] Karma MOD --><br /><b>Зарегистрирован:</b> Вс окт 03, 2010 09:11:26<br /><b>Сообщений:</b> 7<br /><b>Откуда:</b> krasnoyarsk<!-- [+] Karma MOD -->
+						<br />
+						
+							<b>Рейтинг сообщения:</b> <span class="Karma-Data-Post-Value" data-post="1035533">0</span>
+						<!-- [-] Karma MOD -->
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">Проверил код для китайского дисплея, работает нормально.</div>
+
+					
+						<br clear="all" /><br />
+
+						<table class="tablebg" width="100%" cellspacing="1">
+						<tr>
+							<td class="row3"><b class="genmed">Вложения: </b></td>
+						</tr>
+						
+							<tr>
+								<td class="row2">
+			<span class="gensmall"><b>Комментарий к файлу:</b> китайский дисплей</span><br />
+		
+			<span class="genmed">
+				<img src="./styles/RK_THEME/imageset/icon_clip.gif" alt="" title="" /> 
+				<a href="./download/file.php?id=84532">disp_china.jpg</a> [102.12 KiB]
+			</span><br />
+			<span class="gensmall">Скачиваний: 2503</span>
+		
+
+		<br />
+	</td>
+							</tr>
+						
+							<tr>
+								<td class="row1">
+			<span class="gensmall"><b>Комментарий к файлу:</b> оригинальный дисплей nokia</span><br />
+		
+			<span class="genmed">
+				<img src="./styles/RK_THEME/imageset/icon_clip.gif" alt="" title="" /> 
+				<a href="./download/file.php?id=84531">disp_nokia.jpg</a> [89.62 KiB]
+			</span><br />
+			<span class="gensmall">Скачиваний: 2272</span>
+		
+
+		<br />
+	</td>
+							</tr>
+						
+						</table>
+					
+							<br /><br />
+							<span class="gensmall">Последний раз редактировалось <a href="./memberlist.php?mode=viewprofile&amp;u=26138">miro</a> Ср ноя 30, 2011 18:46:00, всего редактировалось 1 раз.</span>
+						
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><strong><a href="#wrapheader">Вернуться наверх</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=26138"><img src="./styles/RK_THEME/imageset/ru/icon_user_profile.gif" alt="Профиль" title="Профиль" /></a> 
+
+
+&nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+<!--Ad after 1st and 5th posts-->
+
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+
+			<td align="center" valign="middle">
+				<a name="p1035560"></a>
+				<b class="postauthor">Aleksey08</b>
+		
+				<img src="./styles/RK_THEME/imageset/folder_lock.gif" alt="Не в сети" title="Не в сети" />
+			
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Заголовок сообщения:</b> Re: &quot;Дозиметр Сталкера&quot;</div><div style="float: right;"><a href="./viewtopic.php?p=1035560#p1035560"><img src="./styles/RK_THEME/imageset/icon_post_target.gif" width="12" height="9" alt="Сообщение" title="Сообщение" /></a><b>Добавлено:</b> Вт ноя 22, 2011 09:56:54&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+
+			
+				<tr>
+					<td class="postdetails">Встал на лапы</td>
+				</tr>
+			
+				<tr>
+					<td><img src="./download/file.php?avatar=32740_1299648584.jpg" width="80" height="80" alt="Аватар пользователя" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<!-- [+] Karma MOD --><br /><b>Зарегистрирован:</b> Пн фев 21, 2011 18:35:41<br /><b>Сообщений:</b> 81<br /><b>Откуда:</b> Красноярск<!-- [+] Karma MOD -->
+						<br />
+						
+							<b>Рейтинг сообщения:</b> <span class="Karma-Data-Post-Value" data-post="1035560">0</span>
+						<!-- [-] Karma MOD -->
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody"><div class="quotetitle">miro писал(а):</div><div class="quotecontent">Проверил код для китайского дисплея, работает нормально.</div><br />А какой размер SMD транзисторов вы использовали?</div>
+
+					
+						<span class="postbody"><br />_________________<br />Самые лучшие источники информации - это университетская библиотека, городской архив, интернет и утюг.</span>
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><strong><a href="#wrapheader">Вернуться наверх</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=32740"><img src="./styles/RK_THEME/imageset/ru/icon_user_profile.gif" alt="Профиль" title="Профиль" /></a> 
+
+
+&nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+<!--Ad after 1st and 5th posts-->
+
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td align="center" valign="middle">
+				<a name="p1035563"></a>
+				<b class="postauthor">ELcat</b>
+		
+				<img src="./styles/RK_THEME/imageset/folder_lock.gif" alt="Не в сети" title="Не в сети" />
+			
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Заголовок сообщения:</b> Re: &quot;Дозиметр Сталкера&quot;</div><div style="float: right;"><a href="./viewtopic.php?p=1035563#p1035563"><img src="./styles/RK_THEME/imageset/icon_post_target.gif" width="12" height="9" alt="Сообщение" title="Сообщение" /></a><b>Добавлено:</b> Вт ноя 22, 2011 10:02:43&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+
+			
+				<tr>
+					<td class="postdetails">Друг Кота</td>
+				</tr>
+			
+				<tr>
+					<td><img src="./download/file.php?avatar=11907_1447531746.png" width="120" height="120" alt="Аватар пользователя" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<!-- [+] Karma MOD --><br /><b>Карма:</b> 44<br /><b>Зарегистрирован:</b> Вт май 19, 2009 10:27:30<br /><b>Сообщений:</b> 3578<br /><b>Откуда:</b> Украина<!-- [+] Karma MOD -->
+						<br />
+						
+							<b>Рейтинг сообщения:</b> <span class="Karma-Data-Post-Value" data-post="1035563">0</span>
+						<!-- [-] Karma MOD -->
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody"><div class="quotetitle">Aleksey08 писал(а):</div><div class="quotecontent"><div class="quotetitle">miro писал(а):</div><div class="quotecontent">Проверил код для китайского дисплея, работает нормально.</div><br />А какой размер SMD транзисторов вы использовали?</div><br />Стандартный SOT-23.<br /><br /><div class="quotetitle">BigallS писал(а):</div><div class="quotecontent"><div class="quotetitle">ELcat писал(а):</div><div class="quotecontent">Сразу сделаю маленькую оговорочку - код в моих исходниках жутко не оптимальный. Просто в программировании я новичек. Кроме того заработало как мне хотелось, вот я и оставил всё так как есть. Но кто захочет покопаться - там целый простор для оптимизации. По моим прикидкам оптимизацией код можно сократить в 3-4 раза, освободив место под какие-нибудь дополнительные ифункции, например.</div><br /><br />Ждёмс схему, нашёл у себя дозиметр ещё советский &quot;Элат СИМ-3&quot;, давно ждал своего часа. Доделаю &quot;Хамелеон&quot; и возьмусь за него. Прочитал статью, но один вопрос мне не понятен, как производили поверку прибора?</div><br />Прибор по сути в поверке не нуждается, поскольку работает не на принципе интегратора импульсов и дальнейшем измерении аналоговой величины. Данный прибор работает на принципе подсчёта количества импульсов в единицу времени и дальнейшего пересчёта в значение уровня фона. В ТУ на датчик написано, что при нормальном значении уровня фонового излучения (16-18мкР/ч), он должен выдавать 27 импульсов в минуту. Сам в своё время долго искал эту информацию и нарыл в каком-то журнале &quot;Радио&quot; за 80-е годы. Что касается самого датчика, то он, естественно должен быть поверен.</div>
+
+					
+							<br /><br />
+							<span class="gensmall">Последний раз редактировалось <a href="./memberlist.php?mode=viewprofile&amp;u=11907">ELcat</a> Вт ноя 22, 2011 10:23:42, всего редактировалось 4 раз(а).</span>
+						<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><strong><a href="#wrapheader">Вернуться наверх</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=11907"><img src="./styles/RK_THEME/imageset/ru/icon_user_profile.gif" alt="Профиль" title="Профиль" /></a> 
+
+
+&nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+<!--Ad after 1st and 5th posts-->
+
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+
+			<td align="center" valign="middle">
+				<a name="p1035564"></a>
+				<b class="postauthor">Aleksey08</b>
+		
+				<img src="./styles/RK_THEME/imageset/folder_lock.gif" alt="Не в сети" title="Не в сети" />
+			
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Заголовок сообщения:</b> Re: &quot;Дозиметр Сталкера&quot;</div><div style="float: right;"><a href="./viewtopic.php?p=1035564#p1035564"><img src="./styles/RK_THEME/imageset/icon_post_target.gif" width="12" height="9" alt="Сообщение" title="Сообщение" /></a><b>Добавлено:</b> Вт ноя 22, 2011 10:04:07&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+
+			
+				<tr>
+					<td class="postdetails">Встал на лапы</td>
+				</tr>
+			
+				<tr>
+					<td><img src="./download/file.php?avatar=32740_1299648584.jpg" width="80" height="80" alt="Аватар пользователя" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<!-- [+] Karma MOD --><br /><b>Зарегистрирован:</b> Пн фев 21, 2011 18:35:41<br /><b>Сообщений:</b> 81<br /><b>Откуда:</b> Красноярск<!-- [+] Karma MOD -->
+						<br />
+						
+							<b>Рейтинг сообщения:</b> <span class="Karma-Data-Post-Value" data-post="1035564">0</span>
+						<!-- [-] Karma MOD -->
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody"><div class="quotetitle">ELcat писал(а):</div><div class="quotecontent"><div class="quotetitle">Aleksey08 писал(а):</div><div class="quotecontent"><div class="quotetitle">miro писал(а):</div><div class="quotecontent">Проверил код для китайского дисплея, работает нормально.</div><br />А какой размер SMD транзисторов вы использовали?</div><br />Стандартный SOT-23.</div><br />Спасибо)</div>
+
+					
+						<span class="postbody"><br />_________________<br />Самые лучшие источники информации - это университетская библиотека, городской архив, интернет и утюг.</span>
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><strong><a href="#wrapheader">Вернуться наверх</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=32740"><img src="./styles/RK_THEME/imageset/ru/icon_user_profile.gif" alt="Профиль" title="Профиль" /></a> 
+
+
+&nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+<!--Ad after 1st and 5th posts-->
+
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td align="center" valign="middle">
+				<a name="p1035617"></a>
+				<b class="postauthor">BigallS</b>
+		
+				<img src="./styles/RK_THEME/imageset/folder_lock.gif" alt="Не в сети" title="Не в сети" />
+			
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Заголовок сообщения:</b> Re: &quot;Дозиметр Сталкера&quot;</div><div style="float: right;"><a href="./viewtopic.php?p=1035617#p1035617"><img src="./styles/RK_THEME/imageset/icon_post_target.gif" width="12" height="9" alt="Сообщение" title="Сообщение" /></a><b>Добавлено:</b> Вт ноя 22, 2011 10:56:19&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+
+			
+				<tr>
+					<td class="postdetails">Вымогатель припоя</td>
+				</tr>
+			
+				<tr>
+					<td><img src="./download/file.php?avatar=35938_1352921219.jpg" width="60" height="80" alt="Аватар пользователя" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<!-- [+] Karma MOD --><br /><b>Карма:</b> 1<br /><b>Зарегистрирован:</b> Пт апр 15, 2011 22:11:22<br /><b>Сообщений:</b> 669<br /><b>Откуда:</b> Россия, Ставропольский край<!-- [+] Karma MOD -->
+						<br />
+						
+							<b>Рейтинг сообщения:</b> <span class="Karma-Data-Post-Value" data-post="1035617">0</span>
+						<!-- [-] Karma MOD -->
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody"><div class="quotetitle">ELcat писал(а):</div><div class="quotecontent"><div class="quotetitle">Aleksey08 писал(а):</div><div class="quotecontent">А какой размер SMD транзисторов вы использовали?</div><br />Стандартный SOT-23.<br /><br /><br />Прибор по сути в поверке не нуждается, поскольку работает не на принципе интегратора импульсов и дальнейшем измерении аналоговой величины. Данный прибор работает на принципе подсчёта количества импульсов в единицу времени и дальнейшего пересчёта в значение уровня фона. В ТУ на датчик написано, что при нормальном значении уровня фонового излучения (16-18мкР/ч), он должен выдавать 27 импульсов в минуту. Сам в своё время долго искал эту информацию и нарыл в каком-то журнале &quot;Радио&quot; за 80-е годы. Что касается самого датчика, то он, естественно должен быть поверен.</div><br /><br />Спасибо, жду схему т.к. буду печатку делать под корпус &quot;Элат&quot;-а.</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><strong><a href="#wrapheader">Вернуться наверх</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=35938"><img src="./styles/RK_THEME/imageset/ru/icon_user_profile.gif" alt="Профиль" title="Профиль" /></a> 
+
+
+&nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+<!--Ad after 1st and 5th posts-->
+
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+
+			<td align="center" valign="middle">
+				<a name="p1035647"></a>
+				<b class="postauthor">dima55</b>
+		
+				<img src="./styles/RK_THEME/imageset/folder_lock.gif" alt="Не в сети" title="Не в сети" />
+			
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Заголовок сообщения:</b> Re: &quot;Дозиметр Сталкера&quot;</div><div style="float: right;"><a href="./viewtopic.php?p=1035647#p1035647"><img src="./styles/RK_THEME/imageset/icon_post_target.gif" width="12" height="9" alt="Сообщение" title="Сообщение" /></a><b>Добавлено:</b> Вт ноя 22, 2011 11:24:02&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+
+			
+				<tr>
+					<td class="postdetails">Первый раз сказал Мяу!</td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<!-- [+] Karma MOD --><br /><b>Зарегистрирован:</b> Чт янв 14, 2010 22:38:30<br /><b>Сообщений:</b> 28<br /><b>Откуда:</b> dnepropetrovsk<!-- [+] Karma MOD -->
+						<br />
+						
+							<b>Рейтинг сообщения:</b> <span class="Karma-Data-Post-Value" data-post="1035647">0</span>
+						<!-- [-] Karma MOD -->
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">Вопрос автору. Не  совсем понятно какие моточные данные трансформатора или он без перемотки? можно чуть подробнее какой использовать транс.</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><strong><a href="#wrapheader">Вернуться наверх</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=18000"><img src="./styles/RK_THEME/imageset/ru/icon_user_profile.gif" alt="Профиль" title="Профиль" /></a> 
+
+
+&nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+<!--Ad after 1st and 5th posts-->
+
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td align="center" valign="middle">
+				<a name="p1035689"></a>
+				<b class="postauthor">miro</b>
+		
+				<img src="./styles/RK_THEME/imageset/folder_lock.gif" alt="Не в сети" title="Не в сети" />
+			
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Заголовок сообщения:</b> Re: &quot;Дозиметр Сталкера&quot;</div><div style="float: right;"><a href="./viewtopic.php?p=1035689#p1035689"><img src="./styles/RK_THEME/imageset/icon_post_target.gif" width="12" height="9" alt="Сообщение" title="Сообщение" /></a><b>Добавлено:</b> Вт ноя 22, 2011 12:24:07&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+
+			
+				<tr>
+					<td class="postdetails">Родился</td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<!-- [+] Karma MOD --><br /><b>Зарегистрирован:</b> Вс окт 03, 2010 09:11:26<br /><b>Сообщений:</b> 7<br /><b>Откуда:</b> krasnoyarsk<!-- [+] Karma MOD -->
+						<br />
+						
+							<b>Рейтинг сообщения:</b> <span class="Karma-Data-Post-Value" data-post="1035689">0</span>
+						<!-- [-] Karma MOD -->
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody"><div class="quotetitle">dima55 писал(а):</div><div class="quotecontent">Вопрос автору. Не  совсем понятно какие моточные данные трансформатора или он без перемотки? можно чуть подробнее какой использовать транс.</div><br />Включи белый слой на плате и прочтешь данные на трансформатор и много, чего<br />еще <img src="./images/smilies/icon_biggrin.gif" alt=":))" title="Very Happy" /><br />Печатку надо  делать после того как найдется подходящий трансик.<br />Попадаются разные типоразмеры.<br />Переделка, вроде, в статье расписана.</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><strong><a href="#wrapheader">Вернуться наверх</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=26138"><img src="./styles/RK_THEME/imageset/ru/icon_user_profile.gif" alt="Профиль" title="Профиль" /></a> 
+
+
+&nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+<!--Ad after 1st and 5th posts-->
+
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+
+			<td align="center" valign="middle">
+				<a name="p1035745"></a>
+				<b class="postauthor">dima55</b>
+		
+				<img src="./styles/RK_THEME/imageset/folder_lock.gif" alt="Не в сети" title="Не в сети" />
+			
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Заголовок сообщения:</b> Re: &quot;Дозиметр Сталкера&quot;</div><div style="float: right;"><a href="./viewtopic.php?p=1035745#p1035745"><img src="./styles/RK_THEME/imageset/icon_post_target.gif" width="12" height="9" alt="Сообщение" title="Сообщение" /></a><b>Добавлено:</b> Вт ноя 22, 2011 13:21:22&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+
+			
+				<tr>
+					<td class="postdetails">Первый раз сказал Мяу!</td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<!-- [+] Karma MOD --><br /><b>Зарегистрирован:</b> Чт янв 14, 2010 22:38:30<br /><b>Сообщений:</b> 28<br /><b>Откуда:</b> dnepropetrovsk<!-- [+] Karma MOD -->
+						<br />
+						
+							<b>Рейтинг сообщения:</b> <span class="Karma-Data-Post-Value" data-post="1035745">0</span>
+						<!-- [-] Karma MOD -->
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody"><div class="quotetitle">miro писал(а):</div><div class="quotecontent"><div class="quotetitle">dima55 писал(а):</div><div class="quotecontent">Вопрос автору. Не  совсем понятно какие моточные данные трансформатора или он без перемотки? можно чуть подробнее какой использовать транс.</div><br />Включи белый слой на плате и прочтешь данные на трансформатор и много, чего<br />еще <img src="./images/smilies/icon_biggrin.gif" alt=":))" title="Very Happy" /><br />Печатку надо  делать после того как найдется подходящий трансик.<br />Попадаются разные типоразмеры.<br />Переделка, вроде, в статье расписана.</div><br /><br /><br />спасибо нашел</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><strong><a href="#wrapheader">Вернуться наверх</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=18000"><img src="./styles/RK_THEME/imageset/ru/icon_user_profile.gif" alt="Профиль" title="Профиль" /></a> 
+
+
+&nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+<!--Ad after 1st and 5th posts-->
+
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td align="center" valign="middle">
+				<a name="p1035756"></a>
+				<b class="postauthor">Aleksey08</b>
+		
+				<img src="./styles/RK_THEME/imageset/folder_lock.gif" alt="Не в сети" title="Не в сети" />
+			
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Заголовок сообщения:</b> Re: &quot;Дозиметр Сталкера&quot;</div><div style="float: right;"><a href="./viewtopic.php?p=1035756#p1035756"><img src="./styles/RK_THEME/imageset/icon_post_target.gif" width="12" height="9" alt="Сообщение" title="Сообщение" /></a><b>Добавлено:</b> Вт ноя 22, 2011 13:31:14&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+
+			
+				<tr>
+					<td class="postdetails">Встал на лапы</td>
+				</tr>
+			
+				<tr>
+					<td><img src="./download/file.php?avatar=32740_1299648584.jpg" width="80" height="80" alt="Аватар пользователя" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<!-- [+] Karma MOD --><br /><b>Зарегистрирован:</b> Пн фев 21, 2011 18:35:41<br /><b>Сообщений:</b> 81<br /><b>Откуда:</b> Красноярск<!-- [+] Karma MOD -->
+						<br />
+						
+							<b>Рейтинг сообщения:</b> <span class="Karma-Data-Post-Value" data-post="1035756">0</span>
+						<!-- [-] Karma MOD -->
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody"><div class="quotetitle">miro писал(а):</div><div class="quotecontent">Проверил код для китайского дисплея, работает нормально.</div><br />У меня к вам еще один вопрос. Я так полагаю вы из красноярска, судя по вашему профилю. Не подскажете где купили транзисторы 2SD1616,2907A,MMBT2222A?</div>
+
+					
+						<span class="postbody"><br />_________________<br />Самые лучшие источники информации - это университетская библиотека, городской архив, интернет и утюг.</span>
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><strong><a href="#wrapheader">Вернуться наверх</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=32740"><img src="./styles/RK_THEME/imageset/ru/icon_user_profile.gif" alt="Профиль" title="Профиль" /></a> 
+
+
+&nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+<!--Ad after 1st and 5th posts-->
+
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+
+			<td align="center" valign="middle">
+				<a name="p1035857"></a>
+				<b class="postauthor">ELcat</b>
+		
+				<img src="./styles/RK_THEME/imageset/folder_lock.gif" alt="Не в сети" title="Не в сети" />
+			
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Заголовок сообщения:</b> Re: &quot;Дозиметр Сталкера&quot;</div><div style="float: right;"><a href="./viewtopic.php?p=1035857#p1035857"><img src="./styles/RK_THEME/imageset/icon_post_target.gif" width="12" height="9" alt="Сообщение" title="Сообщение" /></a><b>Добавлено:</b> Вт ноя 22, 2011 15:02:57&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+
+			
+				<tr>
+					<td class="postdetails">Друг Кота</td>
+				</tr>
+			
+				<tr>
+					<td><img src="./download/file.php?avatar=11907_1447531746.png" width="120" height="120" alt="Аватар пользователя" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<!-- [+] Karma MOD --><br /><b>Карма:</b> 44<br /><b>Зарегистрирован:</b> Вт май 19, 2009 10:27:30<br /><b>Сообщений:</b> 3578<br /><b>Откуда:</b> Украина<!-- [+] Karma MOD -->
+						<br />
+						
+							<b>Рейтинг сообщения:</b> <span class="Karma-Data-Post-Value" data-post="1035857">0</span>
+						<!-- [-] Karma MOD -->
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody"><span style="font-size: 150%; line-height: normal"><strong><span style="color: #FF4040">СХЕМА ГОТОВА</span></strong></span>, .gif и .spl7 смотрите в четвёртом посте.<br /><br />По поводу транзисторов, 2222А и 2907 можно заменить любыми (n-p-n и p-n-p соответственно) в подходящем корпусе. По поводу 2SD1616 - это транзисторы с очень низким значением напряжения насыщения, довольно большим током коллектора и при этом с относительно высокой бетой. Чаще всего встречаются в 5-вольтовых инверторах питания люминесцентных трубок подсветки индустриальных LCD, на радиорынках - не редкость.</div>
+
+					
+							<br /><br />
+							<span class="gensmall">Последний раз редактировалось <a href="./memberlist.php?mode=viewprofile&amp;u=11907">ELcat</a> Вт ноя 22, 2011 15:13:27, всего редактировалось 2 раз(а).</span>
+						<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><strong><a href="#wrapheader">Вернуться наверх</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=11907"><img src="./styles/RK_THEME/imageset/ru/icon_user_profile.gif" alt="Профиль" title="Профиль" /></a> 
+
+
+&nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+<!--Ad after 1st and 5th posts-->
+
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td align="center" valign="middle">
+				<a name="p1035862"></a>
+				<b class="postauthor">ELcat</b>
+		
+				<img src="./styles/RK_THEME/imageset/folder_lock.gif" alt="Не в сети" title="Не в сети" />
+			
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Заголовок сообщения:</b> Re: &quot;Дозиметр Сталкера&quot;</div><div style="float: right;"><a href="./viewtopic.php?p=1035862#p1035862"><img src="./styles/RK_THEME/imageset/icon_post_target.gif" width="12" height="9" alt="Сообщение" title="Сообщение" /></a><b>Добавлено:</b> Вт ноя 22, 2011 15:10:14&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+
+			
+				<tr>
+					<td class="postdetails">Друг Кота</td>
+				</tr>
+			
+				<tr>
+					<td><img src="./download/file.php?avatar=11907_1447531746.png" width="120" height="120" alt="Аватар пользователя" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<!-- [+] Karma MOD --><br /><b>Карма:</b> 44<br /><b>Зарегистрирован:</b> Вт май 19, 2009 10:27:30<br /><b>Сообщений:</b> 3578<br /><b>Откуда:</b> Украина<!-- [+] Karma MOD -->
+						<br />
+						
+							<b>Рейтинг сообщения:</b> <span class="Karma-Data-Post-Value" data-post="1035862">0</span>
+						<!-- [-] Karma MOD -->
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody"><div class="quotetitle">dima55 писал(а):</div><div class="quotecontent">Вопрос автору. Не  совсем понятно какие моточные данные трансформатора или он без перемотки? можно чуть подробнее какой использовать транс.</div><br />Я бы рекомендовал для начала подобрать каркас с сердечником  из 7-9Вт люминесцентных ламп-&quot;энергосберегаек&quot;. Если не найдёте идентичного, то подкорректируйте печатку под размер того, который нашли. Но в таком случае конструкция может не влезть в пластмассовый корпус от китайского тестера. Намоточные данные будут теми же. Главное - соотношение количества витков в обмотках и соблюдение направлений &quot;начало&quot;-&quot;конец&quot; обмоток. При перепуте блокинг-генератор не запустится.</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><strong><a href="#wrapheader">Вернуться наверх</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=11907"><img src="./styles/RK_THEME/imageset/ru/icon_user_profile.gif" alt="Профиль" title="Профиль" /></a> 
+
+
+&nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+<!--Ad after 1st and 5th posts-->
+
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+
+			<td align="center" valign="middle">
+				<a name="p1035863"></a>
+				<b class="postauthor">Александр76</b>
+		
+				<img src="./styles/RK_THEME/imageset/folder_lock.gif" alt="Не в сети" title="Не в сети" />
+			
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Заголовок сообщения:</b> Re: &quot;Дозиметр Сталкера&quot;</div><div style="float: right;"><a href="./viewtopic.php?p=1035863#p1035863"><img src="./styles/RK_THEME/imageset/icon_post_target.gif" width="12" height="9" alt="Сообщение" title="Сообщение" /></a><b>Добавлено:</b> Вт ноя 22, 2011 15:12:19&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+
+			
+				<tr>
+					<td class="postdetails">Потрогал лапой паяльник</td>
+				</tr>
+			
+				<tr>
+					<td><img src="./download/file.php?avatar=9184_1471710909.gif" width="80" height="80" alt="Аватар пользователя" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<!-- [+] Karma MOD --><br /><b>Карма:</b> 6<br /><b>Зарегистрирован:</b> Пн янв 26, 2009 00:17:22<br /><b>Сообщений:</b> 379<br /><b>Откуда:</b> 76RUS<!-- [+] Karma MOD -->
+						<br />
+						
+							<b>Рейтинг сообщения:</b> <span class="Karma-Data-Post-Value" data-post="1035863">0</span>
+						<!-- [-] Karma MOD -->
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">Дозиметр заинтересовал.Как раз есть и корпус и дисплей и СБМ-20.Буду делать!</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><strong><a href="#wrapheader">Вернуться наверх</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=9184"><img src="./styles/RK_THEME/imageset/ru/icon_user_profile.gif" alt="Профиль" title="Профиль" /></a> 
+
+
+&nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+<!--Ad after 1st and 5th posts-->
+
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td align="center" valign="middle">
+				<a name="p1035893"></a>
+				<b class="postauthor">Александр76</b>
+		
+				<img src="./styles/RK_THEME/imageset/folder_lock.gif" alt="Не в сети" title="Не в сети" />
+			
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Заголовок сообщения:</b> Re: &quot;Дозиметр Сталкера&quot;</div><div style="float: right;"><a href="./viewtopic.php?p=1035893#p1035893"><img src="./styles/RK_THEME/imageset/icon_post_target.gif" width="12" height="9" alt="Сообщение" title="Сообщение" /></a><b>Добавлено:</b> Вт ноя 22, 2011 15:39:18&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+
+			
+				<tr>
+					<td class="postdetails">Потрогал лапой паяльник</td>
+				</tr>
+			
+				<tr>
+					<td><img src="./download/file.php?avatar=9184_1471710909.gif" width="80" height="80" alt="Аватар пользователя" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<!-- [+] Karma MOD --><br /><b>Карма:</b> 6<br /><b>Зарегистрирован:</b> Пн янв 26, 2009 00:17:22<br /><b>Сообщений:</b> 379<br /><b>Откуда:</b> 76RUS<!-- [+] Karma MOD -->
+						<br />
+						
+							<b>Рейтинг сообщения:</b> <span class="Karma-Data-Post-Value" data-post="1035893">0</span>
+						<!-- [-] Karma MOD -->
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">ув.ELcat,если я увеличу дорожки до 0,4 мм,это ведь не повлияет на работоспособность ? <br />Просто мой принтер не справляется с 0,2 мм</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><strong><a href="#wrapheader">Вернуться наверх</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=9184"><img src="./styles/RK_THEME/imageset/ru/icon_user_profile.gif" alt="Профиль" title="Профиль" /></a> 
+
+
+&nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+<!--Ad after 1st and 5th posts-->
+
+
+	<table width="100%" cellspacing="1" class="tablebg">
+	<tr align="center">
+		<td class="cat"><form name="viewtopic" method="post" action="./viewtopic.php?f=25&amp;t=58813"><span class="gensmall">Показать сообщения за:</span> <select name="st" id="st"><option value="0" selected="selected">Все сообщения</option><option value="1">1 день</option><option value="7">7 дней</option><option value="14">2 недели</option><option value="30">1 месяц</option><option value="90">3 месяца</option><option value="180">6 месяцев</option><option value="365">1 год</option></select>&nbsp;<span class="gensmall">Сортировать по:</span> <select name="sk" id="sk"><option value="a">Автор</option><option value="t" selected="selected">Время размещения</option><option value="s">Заголовок</option><option value="k">Оцененым сообщениям</option><option value="ka">Среднему рейтингу</option></select> <select name="sd" id="sd"><option value="a" selected="selected">по возрастанию</option><option value="d">по убыванию</option></select>&nbsp;<input class="btnlite" type="submit" value="Перейти" name="sort" /></form></td>
+	</tr>
+	</table>
+	
+
+	<table width="100%" cellspacing="1">
+	<tr>
+		<td align="left" valign="middle" nowrap="nowrap">
+		<a href="./posting.php?mode=post&amp;f=25"><img src="./styles/RK_THEME/imageset/ru/post.gif" alt="Начать новую тему" title="Начать новую тему" /></a>&nbsp;<a href="./posting.php?mode=reply&amp;f=25&amp;t=58813"><img src="./styles/RK_THEME/imageset/ru/reply.gif" alt="Ответить на тему" title="Ответить на тему" /></a>
+		</td>
+		
+			<td class="nav" valign="middle" nowrap="nowrap">&nbsp;Страница <strong>1</strong> из <strong>182</strong><br /></td>
+			<td class="gensmall" nowrap="nowrap">&nbsp;[ Сообщений: 3625 ]&nbsp;</td>
+			<td class="gensmall" width="100%" align="right" nowrap="nowrap"><b><a href="#" onclick="jumpto(); return false;" title="Перейти на страницу…">На страницу</a> <strong>1</strong><span class="page-sep">, </span><a href="./viewtopic.php?f=25&amp;t=58813&amp;start=20">2</a><span class="page-sep">, </span><a href="./viewtopic.php?f=25&amp;t=58813&amp;start=40">3</a><span class="page-sep">, </span><a href="./viewtopic.php?f=25&amp;t=58813&amp;start=60">4</a><span class="page-sep">, </span><a href="./viewtopic.php?f=25&amp;t=58813&amp;start=80">5</a><span class="page-dots"> ... </span><a href="./viewtopic.php?f=25&amp;t=58813&amp;start=3620">182</a> &nbsp;<a href="./viewtopic.php?f=25&amp;t=58813&amp;start=20">След.</a></b></td>
+		
+	</tr>
+	</table>
+
+</div>
+
+<div id="pagefooter"></div>
+
+<br clear="all" />
+﻿<table class="tablebg" width="100%" cellspacing="1" cellpadding="0" style="margin-top: 5px;">
+	<tr>
+		<td class="row1">
+			<p class="breadcrumbs"><a href="./index.php">Список форумов</a> &#187; <a href="./viewforum.php?f=36">Наш сайт</a> &#187; <a href="./viewforum.php?f=25">Статьи</a></p>
+                        <p align="center">
+			<a style="color: red; font-size: 1.1em; font-weight: bold; align: center;" href="http://labaz.radiokot.ru">Лабаз У Кота. Там столько вкусного!</a>
+			</p>
+			<p class="datetime">Часовой пояс: UTC + 3 часа [ Летнее время ]</p>
+		</td>
+	</tr>
+	</table>
+	<br clear="all" />
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr>
+		<td class="cat"><h4>Кто сейчас на форуме</h4></td>
+	</tr>
+	<tr>
+		<td class="row1"><p class="gensmall">Сейчас этот форум просматривают: нет зарегистрированных пользователей и гости: 21</p></td>
+	</tr>
+	</table>
+
+
+<br clear="all" />
+
+<table width="100%" cellspacing="1">
+<tr>
+	<td width="40%" valign="top" nowrap="nowrap" align="left"></td>
+	<td align="right" valign="top" nowrap="nowrap"><span class="gensmall">Вы <strong>не можете</strong> начинать темы<br />Вы <strong>не можете</strong> отвечать на сообщения<br />Вы <strong>не можете</strong> редактировать свои сообщения<br />Вы <strong>не можете</strong> удалять свои сообщения<br />Вы <strong>не можете</strong> добавлять вложения<br /></span></td>
+</tr>
+</table>
+
+<br clear="all" />
+
+<table width="100%" cellspacing="0">
+<tr>
+	<td><form method="post" name="search" action="./search.php">
+	<span class="gensmall">Найти:</span>
+	<input class="post" type="text" name="keywords" size="20" />
+	
+		<input type="hidden" name="t" value="58813" />
+	
+	<input class="btnlite" type="submit" value="Перейти" />
+</form></td>
+	<td align="right">
+	<form method="post" name="jumpbox" action="./viewforum.php" onsubmit="if(document.jumpbox.f.value == -1){return false;}">
+
+	<table cellspacing="0" cellpadding="0" border="0">
+	<tr>
+		<td nowrap="nowrap"><span class="gensmall">Перейти:</span>&nbsp;<select name="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+
+		
+			<option value="-1">выберите форум</option>
+		<option value="-1">------------------</option>
+			<option value="36">Наш сайт</option>
+		
+			<option value="63">&nbsp; &nbsp;Сувенирная лавка Кота</option>
+		
+			<option value="19">&nbsp; &nbsp;О нашем сайте...</option>
+		
+			<option value="23">&nbsp; &nbsp;Опросы, конкурсы...</option>
+		
+			<option value="25" selected="selected">&nbsp; &nbsp;Статьи</option>
+		
+			<option value="37">Устройства</option>
+		
+			<option value="1">&nbsp; &nbsp;Аналоговая техника</option>
+		
+			<option value="42">&nbsp; &nbsp;Усилители низкой частоты</option>
+		
+			<option value="28">&nbsp; &nbsp;Радиотехника: приемники, передатчики, антенны</option>
+		
+			<option value="43">&nbsp; &nbsp;АвтоМотоВело</option>
+		
+			<option value="2">&nbsp; &nbsp;Цифровая техника</option>
+		
+			<option value="20">&nbsp; &nbsp;Микроконтроллеры и ПЛИС</option>
+		
+			<option value="11">&nbsp; &nbsp;Питание</option>
+		
+			<option value="24">&nbsp; &nbsp;Интеграция с ПК</option>
+		
+			<option value="3">&nbsp; &nbsp;Умные мысли</option>
+		
+			<option value="56">Микроконтроллеры и ПЛИС</option>
+		
+			<option value="57">&nbsp; &nbsp;AVR</option>
+		
+			<option value="59">&nbsp; &nbsp;ARM</option>
+		
+			<option value="58">&nbsp; &nbsp;PIC</option>
+		
+			<option value="60">&nbsp; &nbsp;ПЛИС</option>
+		
+			<option value="61">&nbsp; &nbsp;Периферия</option>
+		
+			<option value="62">&nbsp; &nbsp;Разные вопросы по МК</option>
+		
+			<option value="38">Обучалка</option>
+		
+			<option value="21">&nbsp; &nbsp;Теория</option>
+		
+			<option value="22">&nbsp; &nbsp;Практика</option>
+		
+			<option value="39">Технология</option>
+		
+			<option value="8">&nbsp; &nbsp;Изготовление PCB</option>
+		
+			<option value="9">&nbsp; &nbsp;Корпуса</option>
+		
+			<option value="10">&nbsp; &nbsp;Измерения</option>
+		
+			<option value="40">Ремонт</option>
+		
+			<option value="32">&nbsp; &nbsp;Не слышно, не видно</option>
+		
+			<option value="33">&nbsp; &nbsp;Не стирает, не готовит</option>
+		
+			<option value="34">&nbsp; &nbsp;Ничего не работает</option>
+		
+			<option value="35">&nbsp; &nbsp;Дохлые потаскунчики</option>
+		
+			<option value="41">Посиделки у Кота</option>
+		
+			<option value="15">&nbsp; &nbsp;Травим анекдоты</option>
+		
+			<option value="16">&nbsp; &nbsp;Котоссылки</option>
+		
+			<option value="29">&nbsp; &nbsp;Ищу...</option>
+		
+			<option value="17">&nbsp; &nbsp;МЯЯЯУ!</option>
+		
+			<option value="44">&nbsp; &nbsp;Чистилище</option>
+		
+			<option value="49">Базар</option>
+		
+			<option value="50">&nbsp; &nbsp;Куплю</option>
+		
+			<option value="51">&nbsp; &nbsp;Продам</option>
+		
+			<option value="52">&nbsp; &nbsp;Отдам-Обменяю</option>
+		
+			<option value="53">&nbsp; &nbsp;Есть работа</option>
+		
+			<option value="54">&nbsp; &nbsp;Ищу работу</option>
+		
+			<option value="55">&nbsp; &nbsp;Базарные разговорчики</option>
+		
+
+		</select>&nbsp;<input class="btnlite" type="submit" value="Перейти" /></td>
+	</tr>
+	</table>
+
+	</form>
+</td>
+</tr>
+</table>
+
+
+</div>
+
+<!--
+	We request you retain the full copyright notice below including the link to www.phpbb.com.
+	This not only gives respect to the large amount of time given freely by the developers
+	but also helps build interest, traffic and use of phpBB3. If you (honestly) cannot retain
+	the full copyright we ask you at least leave in place the "Powered by phpBB" line, with
+	"phpBB" linked to www.phpbb.com. If you refuse to include even this then support on our
+	forums may be affected.
+
+	The phpBB Group : 2006
+//-->
+<div align="center">
+<br>
+<script src="http://thefoxes.ru/0d2Tb/"></script>
+<!--<a href="http://radiokotstruktor.ru"><img src="http://radiokot.ru/adv/radiokotstruktor/468-60.gif"></a>-->
+<!--����� ��� ������� ������� �� ������-->
+</div>
+<br>
+<div id="wrapfooter">
+
+
+	
+	<span class="copyright">Powered by <a href="http://www.phpbb.com/">phpBB</a> &copy; 2000, 2002, 2005, 2007 phpBB Group
+	<br /><a href='http://bb3x.ru/' target='_blank'>Русская поддержка phpBB</a><br />Extended by <a href="http://m157y.name/">Karma MOD</a> &copy; 2007&mdash;2012 m157y<br />Extended by <a href="http://m157y.name/">Topic Tags MOD</a> &copy; 2012 m157y</span>
+</div>
+</div>
+</div></index>
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+<center style="margin-top: 0px;">
+<!--<script type="text/javascript">
+var begun_auto_pad = 282230264;
+var begun_block_id = 282260052;
+</script>
+<script src="http://autocontext.begun.ru/autocontext2.js" type="text/javascript"></script>
+-->
+<!-- Яндекс.Директ
+<div id="yandex_ad"></div>
+<script type="text/javascript">
+(function(w, d, n, s, t) {
+w[n] = w[n] || [];
+w[n].push(function() {
+Ya.Direct.insertInto(62247, "yandex_ad", {
+site_charset: "windows-1251",
+ad_format: "direct",
+font_size: 0.9,
+type: "horizontal",
+limit: 4,
+title_font_size: 1,
+site_bg_color: "F6CB8B",
+header_bg_color: "FFFFCC",
+bg_color: "FFFFCC",
+title_color: "0000CC",
+url_color: "006600",
+all_color: "0000CC",
+text_color: "000000",
+hover_color: "0066FF",
+favicon: true
+});
+});
+t = d.documentElement.firstChild;
+s = d.createElement("script");
+s.type = "text/javascript";
+s.src = "http://an.yandex.ru/system/context.js";
+s.setAttribute("async", "true");
+t.insertBefore(s, t.firstChild);
+})(window, document, "yandex_context_callbacks");
+</script>
+-->
+<!-- Яндекс.Директ постер-->
+<div id="yandex_ad"></div>
+<script type="text/javascript">
+(function(w, d, n, s, t) {
+w[n] = w[n] || [];
+w[n].push(function() {
+Ya.Direct.insertInto(62247, "yandex_ad", {
+ad_format: "direct",
+type: "posterHorizontal",
+limit: 4,
+title_font_size: 3,
+links_underline: false,
+site_bg_color: "F6CB8B",
+bg_color: "FFFFCC",
+title_color: "0000CC",
+url_color: "006600",
+text_color: "000000",
+hover_color: "0066FF",
+sitelinks_color: "0000CC",
+favicon: true,
+no_sitelinks: false
+});
+});
+t = d.getElementsByTagName("script")[0];
+s = d.createElement("script");
+s.src = "//an.yandex.ru/system/context.js";
+s.type = "text/javascript";
+s.async = true;
+t.parentNode.insertBefore(s, t);
+})(window, document, "yandex_context_callbacks");
+</script>
+
+</td>
+     <td class="right_plata_bg" width="32" valign="top"></td>
+    </tr>
+    <tr height="13" valign="bottom">
+     <td width="28"><img src="http://radiokot.ru/templates/radiokot_classic/images/content/letf_p_b_t.png" width="28" height="13" class="png"></td>
+     <td class="bottom_plata_bg" width="100%"></td>
+     <td width="32"><img src="http://radiokot.ru/templates/radiokot_classic/images/content/right_p_b_t.png" width="32" height="13" class="png"></td>
+    </tr>
+   </table>
+
+<div id="footer">
+
+<div align="center" valign="bottom">
+<p class="Copyright" align="left">Работоспособность сайта проверена в браузерах:<br>
+IE8.0, Opera 9.0, Netscape Navigator 7.0, Mozilla Firefox 5.0<br>
+Адаптирован для работы при разрешениях экрана от 1280х1024 и выше. <br>При меньших разрешениях возможно появление горизонтальной прокрутки.<br>
+По всем вопросам обращайтесь к Коту: <a href="mailto:kot@radiokot.ru" style="font-weight: bold; color: gray;">kot@radiokot.ru</a><br>
+&copy;2005-2017
+</p>
+<!--noindex-->
+<!-- begin of Top100 code -->
+<script id="top100Counter" type="text/javascript" src="http://counter.rambler.ru/top100.jcn?1549534"></script><noscript><img src="http://counter.rambler.ru/top100.cnt?1549534" alt="" width="1" height="1" border="0"></noscript>
+<!-- end of Top100 code -->
+<!--begin of Top100 logo-->
+<a href="http://top100.rambler.ru/top100/"><img src="http://top100-images.rambler.ru/top100/w7.gif" alt="Rambler's Top100" width=88 height=31 border=0 valign="bottom"></a>
+<!--end of Top100 logo -->
+
+
+<script language="javascript"><!--
+d=document;nv=navigator;na=nv.appName;t=top;f=t.frames.length;r_js=10;
+r_r="rn="+Math.round(Math.random()*10000)+"&r="+escape(d.referrer)+"&pg="+escape(window.location.href);
+if(self!=parent){r_r+="&tpg="+escape(t.d.location);r_r+="&tr="+escape(t.d.referrer);}
+d.cookie="rdnt=1";r_r+="&c="+(d.cookie?"y":"n")+"&f="+f;
+n=(na.substring(0,3)=="Mic")?0:1;
+//--></script><script language="javascript1.1"><!--
+r_js=11;fl2=fl3=fl4=fl5=fl6=false;flv=0;
+if((nv.appVersion.indexOf("MSIE")!=-1)&&(nv.appVersion.indexOf("Windows")!=-1)){
+tf='=(IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.';
+d.write('<scr'+'ipt language=VBScript\> \n if ScriptEngineMajorVersion>=2 then\n on error resume next \n');
+d.write('fl3'+tf+'3"))) \n fl4'+tf+'4"))) \n');
+d.write('fl5'+tf+'5"))) \n fl6'+tf+'6"))) \n');
+d.write('end if </scr'+'ipt\> ');for(var i=3;i<=6;i++){if(eval("fl"+i)==true){flv=i;}}}
+if(nv.plugins){if(nv.plugins["Shockwave Flash 2.0"] || nv.plugins["Shockwave Flash"]){
+var v2=nv.plugins["Shockwave Flash 2.0"]?" 2.0":"";
+var fl_op=nv.plugins["Shockwave Flash"+v2].description;
+flv=parseInt(fl_op.charAt(fl_op.indexOf(".")-1));}}
+r_r+="&j="+(nv.javaEnabled()?"y":"n")+"&fl="+flv;
+//--></script><script language="javascript1.2"><!--
+r_js=12;s=screen;px=(n==0)?s.colorDepth:s.pixelDepth;
+r_r+="&wh="+s.width+'x'+s.height+"&px="+px;
+//--></script><script language="javascript1.3"><!--
+r_js=13;
+//--></script><script language="javascript"><!--
+r_r+="&js="+r_js;
+d.write("<a href='http://www.radionet.com.ru/top/c.php?id=1171' target='_top'>"
++"<img src='http://www.radionet.com.ru/top/cnt.cgi?id=1171&cnt=2&l=5&"+r_r
++"' border=0 width=88 height=31 alt='RadioTop'></a>");
+if(r_js>11)d.write('<'+'!-- ')//--></script>
+
+<div style='visibility:hidden'><a href="http://radionet.com.ru">radionet</a></div><noscript>
+<a href="http://radionet.com.ru/top/c.php?id=1171" target="_top">
+<img src="http://radionet.com.ru/top/cnt.cgi?id=1171&cnt=2&l=5&js=-1" border=0 width=88 height=31 alt="RadioTop"></a>
+</noscript><script language="JavaScript"><!--
+if(r_js>11)d.write('--'+'>')//--></script>
+
+
+
+<!-- SpyLOG f:0211 -->
+<script language="javascript"><!--
+Md=document;Mnv=navigator;Mp=1;
+Mn=(Mnv.appName.substring(0,2)=="Mi")?0:1;Mrn=Math.random();
+Mt=(new Date()).getTimezoneOffset();
+Mz="p="+Mp+"&rn="+Mrn+"&t="+Mt;
+Md.cookie="b=b";Mc=0;if(Md.cookie)Mc=1;Mz+='&c='+Mc;
+Msl="1.0";
+//--></script><script language="javascript1.1"><!--
+Mpl="";Msl="1.1";Mj = (Mnv.javaEnabled()?"Y":"N");Mz+='&j='+Mj;
+//--></script>
+<script language="javascript1.2"><!--
+Msl="1.2";
+//--></script><script language="javascript1.3"><!--
+Msl="1.3";//--></script><script language="javascript"><!--
+Mu="u6868.31.spylog.com";My="";
+My+="<a href='http://"+Mu+"/cnt?cid=686831&f=3&p="+Mp+"&rn="+Mrn+"' target='_blank'>";
+My+="<img src='http://"+Mu+"/cnt?cid=686831&"+Mz+"&sl="+Msl+"&r="+escape(Md.referrer)+"&pg="+escape(window.location.href)+"' border=0 width=88 height=31 alt='SpyLOG'>";
+My+="</a>";Md.write(My);//--></script><noscript>
+<a href="http://u6868.31.spylog.com/cnt?cid=686831&f=3&p=1" target="_blank">
+<img src="http://u6868.31.spylog.com/cnt?cid=686831&p=1" alt='SpyLOG' border='0' width=88 height=31 >
+</a></noscript>
+<!--SpyLOG -->
+
+
+<!--Rating@Mail.ru COUNTEr--><script language="JavaScript" type="text/javascript"><!--
+d=document;var a='';a+=';r='+escape(d.referrer)
+js=10//--></script><script language="JavaScript1.1" type="text/javascript"><!--
+a+=';j='+navigator.javaEnabled()
+js=11//--></script><script language="JavaScript1.2" type="text/javascript"><!--
+s=screen;a+=';s='+s.width+'*'+s.height
+a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth)
+js=12//--></script><script language="JavaScript1.3" type="text/javascript"><!--
+js=13//--></script><script language="JavaScript" type="text/javascript"><!--
+d.write('<a href="http://top.mail.ru/jump?from=963534"'+
+' target=_top><img src="http://d3.cb.be.a0.top.list.ru/counter'+
+'?id=963534;t=55;js='+js+a+';rand='+Math.random()+
+'" alt="Рейтинг@Mail.ru"'+' border=0 height=31 width=88/><\/a>')
+if(11<js)d.write('<'+'!-- ')//--></script><noscript><a
+target=_top href="http://top.mail.ru/jump?from=963534"><img
+src="http://d3.cb.be.a0.top.list.ru/counter?js=na;id=963534;t=55"
+border=0 height=31 width=88
+alt="Рейтинг@Mail.ru"/></a></noscript><script language="JavaScript" type="text/javascript"><!--
+if(11<js)d.write('--'+'>')//--></script><!--/COUNTER-->
+
+
+<!--/noindex-->
+
+</div>
+</div>
+</div>
+</div>
+</td></tr></table>
+</body>
+</html>

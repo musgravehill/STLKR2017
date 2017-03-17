@@ -1,0 +1,883 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="content-language" content="ru">
+<meta name="creation-date" content="02/20/2007">
+<meta name="revisit-after" content="15 days">
+<title>РадиоКот :: Дозиметр Сталкера</title>
+<script type="text/javascript"  src="http://radiokot.ru/templates/radiokot_classic/scr1.js"></script>
+<link rel="SHORTCUT ICON" href="http://radiokot.ru/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="http://radiokot.ru/templates/radiokot_classic/my.css">
+
+<link type="text/css" rel="stylesheet" href="/templates/dropdown/jquery.dropdown.css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script type="text/javascript" src="/templates/dropdown/jquery.dropdown.js"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="http://radiokot.ru/templates/radiokot_classic/js/jquery.mousewheel-3.0.6.pack.js"></script>
+<!-- Add fancyBox main JS and CSS files -->
+<script type="text/javascript" src="http://radiokot.ru/templates/radiokot_classic/js/jquery.fancybox.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="http://radiokot.ru/templates/radiokot_classic/css/fancybox/jquery.fancybox.css" media="screen" />
+<script type='text/javascript'>	$(document).ready(function() {	$('.fancybox, .fancybox_buy').fancybox();});</script>
+
+
+
+
+
+<!-- Put this script tag to the <head> of your page -->
+<script type="text/javascript" src="//vk.com/js/api/openapi.js?98"></script>
+<script type="text/javascript">
+  VK.init({apiId: 3794987, onlyWidgets: true});
+</script>
+
+
+<script type='text/javascript'>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+<script type='text/javascript'>
+googletag.cmd.push(function() {
+googletag.defineSlot('/1234152/radiokot-220x250', [220, 250], 'div-gpt-ad-1376913563587-0').addService(googletag.pubads());
+googletag.defineSlot('/1234152/radiokot-500x100', [500, 100], 'div-gpt-ad-1376913563587-1').addService(googletag.pubads());
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script>
+
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="main">
+  <div id="find_datasheet">
+      <div id="find_datasheet_form"><div id="collapse" onclick="collapse_tag('find_datasheet', 'find_datasheet_form');"><img src="http://radiokot.ru/templates/radiokot_classic/images/datasheet.png" /></div>
+      <form name="searching" method="get" action="http://www.datasheet4u.com/share_search.php" target="blank">
+      <div align="center"><font size="2">Например TDA7294</font>
+      <input size="30" name="sWord" style="background-color:CCFFCC;"><br>
+      <input type="submit" value="Поиск" style="background-color:EAAA88; color:990000; margin-top:5px; width: 100px">
+      </div>
+      </form>
+      </div>
+  </div>
+
+  <div id="kot_body"></div>
+  <div id="kot_head"></div>
+  <div id="kot_rraw"></div>
+  <div id="kot_lraw"></div>
+  <div id="kot_hvost"></div>
+  <div id="site_name"></div>
+
+  <div id="right_cont">
+        <div id="rinfo">
+   <br>
+    </div>
+    <div id="findbar">
+    <form  METHOD="GET" ACTION="http://radiokot.ru/search/">
+    <img src="http://radiokot.ru/templates/radiokot_classic/images/find.png" style="vertical-align: bottom;">
+    <input type="text" name="query" size="25" class="relief">
+    <input type="image" src="http://radiokot.ru/templates/radiokot_classic/images/ok.png" alt="ok" style="vertical-align: bottom;">
+    </form>
+    </div>
+  </div>
+
+  <div id="menu" style="width: 90%">
+    <div id="btn1"><a href="http://radiokot.ru" class="mmenu">Главная</a></div>
+    <div id="btn2"><a href="http://radiokot.ru/circuit" class="mmenu">Схемы</a></div>
+    <div id="btn3"><a href="http://radiokot.ru/lab" class="mmenu">Лаборатория</a></div>
+    <div id="btn4"><a href="http://radiokot.ru/articles" class="mmenu">Статьи</a></div>
+    <div id="btn5"><a href="http://radiokot.ru/start" class="mmenu">Обучалка</a></div>
+    <div id="btn6"><a href="http://radiokot.ru/links" class="mmenu">Ссылки</a></div>
+    <div id="btn7"><a href="http://radiokot.ru/inquiry" class="mmenu">Справочник</a></div>
+    <div id="btn8"><a href="http://radiokot.ru/art" class="mmenu">КотАрт</a></div>
+    <div id="btn9"><a href="http://radiokot.ru/about" class="mmenu">О проекте</a></div>
+    <div id="btn10"><a href="http://radiokot.ru/forum" class="mmenu">Форум</a></div>
+	
+	
+		<div style='float: rigth; padding-right: 50px' align='right'>
+		<div id="socials">
+			<a href="#" data-dropdown="#dropdown-1" data-horizontal-offset="-90"  data-vertical-offset="-175" style="text-decoration: none" title="Мы в соцсетях">
+			<img src="/images/Logo_VKontakte.png" border="0" alt="Мы в соцсетях" width="22" height="22">
+			<img src="/images/arrow-buttons.png" border="0" alt="Мы в соцсетях" width="15" height="15">
+			<img src="/images/facebook_logo.png" border="0" alt="Мы в соцсетях" width="22" height="22">
+			</a>
+			<div id="dropdown-1" class="dropdown dropdown-tip dropdown-anchor-right">
+			    <div class="dropdown-panel">
+			    	<table cellspacing="5" sellpadding="0" border="0" style="width:450px">
+			    		<tr>
+			    		<td valign="top" width="220">
+			       		<!-- VK Widget -->
+<div id="vk_groups"></div>
+<script type="text/javascript">
+VK.Widgets.Group("vk_groups", {mode: 0, width: "220", height: "250", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 56378656);
+</script>
+			    		</td>
+			    		<td valign="top"  width="220">
+			    		<div class="fb-like-box" data-href="https://www.facebook.com/www.radiokot.ru" data-width="220" data-show-faces="true" data-stream="false" data-show-border="true" data-header="true"></div>
+			    		</td>
+			    		</tr>
+			    	</table>
+			    </div>
+			</div>
+		</div>		
+	</div>
+	
+</div>
+  
+  <div id="plata">
+   <div id="dorogi"><img src="http://radiokot.ru/templates/radiokot_classic/images/dorogi.png" width="680px" height="286px"></div>
+   <table id="platatb" width="100%" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+    <td></td>
+    <td colspan="3"><img src="/images/pix.gid" width="940" height="1"></td>
+    <td></td>
+    </tr>   
+    <tr height="145" valign="top">
+     <td width="28"><img src="http://radiokot.ru/templates/radiokot_classic/images/content/lefttb.png" border="0"></td>
+     <td background="http://radiokot.ru/templates/radiokot_classic/images/content/centrtb.png" width="100%"></td>
+
+     <td width="32"><img src="http://radiokot.ru/templates/radiokot_classic/images/content/righttb.png" width="32" height="148"></td>
+    </tr>
+    <tr>
+     <td background="http://radiokot.ru/templates/radiokot_classic/images/content/rightcont.png" width="28"></td>
+     <td bgcolor="#F6CB8B">
+        <!--Гуглобанер-->
+<link rel="stylesheet" type="text/css" href="http://radiokot.ru/templates/default/adv.css">
+        <div id="banner_code">
+                <center>
+<div align="center">
+<!--<script async src="//ax.rareru.ru/axads.js" ></script>
+<ins class="__axcode__" data-axid="75" data-fmt="1" data-width="728" data-height="90"
+    style="display:inline-block;width:728px;height:90px;background:transparent;"></ins>
+<script>(axads = window.axads || []).push({});</script>-->
+
+<!--<a href="http://radiokotstruktor.ru/"><img src="http://radiokot.ru/adv/01.gif" border="0" /></a>-->
+<script type="text/javascript">
+ URL=new Array
+  URL[0]="https://supereyes.ru/catalog/waveform_generator/Generator_signalov_MHS5200A_25MGc/"
+  URL[1]="https://supereyes.ru/catalog/Oscilloscopes/Oscilloscopes_UNI_T_UTD2052CL_50_Mhz/"
+  URL[2]="https://supereyes.ru/catalog/Infrakrasnye_pajalnye_stancii_dlja_BGA_korpusov/Infrakrasnaja_pajalnaja_stancija_dlja_BGA_korpusov_LyM770/"
+  URL[3]="https://supereyes.ru/catalog/usb_microscope/Cifrovoj_USB_mikroskop_Supereyes_B011_so_smennym_dlinnofokusnym_obektivom/"
+
+ image_ID=new Array
+  image_ID[0]="https://supereyes.ru/img/banners/radiokot/baner_1.jpg"
+  image_ID[1]="https://supereyes.ru/img/banners/radiokot/baner_2.jpg"
+  image_ID[2]="https://supereyes.ru/img/banners/radiokot/baner_3.jpg"
+  image_ID[3]="https://supereyes.ru/img/banners/radiokot/baner_4.jpg"
+
+ var banner=3
+ var last_banner=(URL.length-1)
+ var pause=7000
+
+function Rotate(image_num) {
+ if (banner==last_banner) banner=0
+ else banner++
+ document.images[image_num].src=image_ID[banner]
+ window.setTimeout('Rotate("banners")',pause);
+}
+</script>
+
+ <a href="javascript:document.location=(URL[banner])">
+  <img name="banners" src="https://supereyes.ru/img/banners/radiokot/baner_1.jpg">
+ </a>
+
+<script type="text/javascript">
+ Rotate('banners');
+</script>
+<br>
+
+<!--AliExpress block-->
+<div align="center">
+<script defer
+src="https://aliexpress-internet.ru/js/rk1bi690.js"></script>
+<div id="banner34er45tg56block"></div>
+
+<!-- R-62247-1 Яндекс.RTB-блок  -->
+<!--<div id="yandex_ad_R-62247-1"></div>
+<script type="text/javascript">
+    (function(w, d, n, s, t) {
+        w[n] = w[n] || [];
+        w[n].push(function() {
+            Ya.Context.AdvManager.render({
+                blockId: "R-62247-1",
+                renderTo: "yandex_ad_R-62247-1",
+                async: true
+            });
+        });
+        t = d.getElementsByTagName("script")[0];
+        s = d.createElement("script");
+        s.type = "text/javascript";
+        s.src = "//an.yandex.ru/system/context.js";
+        s.async = true;
+        t.parentNode.insertBefore(s, t);
+    })(this, this.document, "yandexContextAsyncCallbacks");
+</script>-->
+<!--<a href="http://radiokotstruktor.ru"><img src="http://radiokot.ru/adv/01.gif"  border="0" /></a>-->
+</div>
+</div>
+<br>
+                 </center>
+      </div>
+<!--Гуглобанер-->
+     <div id="content">
+     <div id="centr_field">
+     <div id="news_cnt">
+
+ <table width="100%" id="conttbl" style="height:100%; z-index:500"  cellpadding="0" cellspacing="0" border="0">
+      <tr height="52" valign="top">
+      <td width="53"><img src="http://radiokot.ru/templates/radiokot_classic/images/content/left_t_f.png" width="53" height="52"></td>
+      <td class="top_content_bg" width="100%" height="52">
+      </td>
+      <td width="55"><img src="http://radiokot.ru/templates/radiokot_classic/images/content/right_t_f.png" width="55" height="52"></td>
+     </tr>
+     <tr>
+     <td background="http://radiokot.ru/templates/radiokot_classic/images/content/centr_f.png" width="53"></td>
+
+
+     <td bgcolor="#FFE3C8" width="100%" valign="top" >
+
+     <div id="content_txt">
+     <div id="hypercontext">
+<index><a class="NaviBar" href="http://radiokot.ru">РадиоКот</a> > <a class="NaviBar" href="http://radiokot.ru/circuit">Схемы</a> > <a class="NaviBar" href="http://radiokot.ru/circuit/digital">Цифровые устройства</a> > <a class="NaviBar" href="http://radiokot.ru/circuit/digital/measure">Измерительная техника</a><br><p class="ArticleHdr">Дозиметр Сталкера</p><p class='AfterHeader'>Теги: <a class="ITL" href="http://radiokot.ru/search/?tag=1&query=Дозиметр">Дозиметр</a>. </p>
+    <p class="AfterHeader">
+    Автор: ELcat<br> 
+    Опубликовано 21.11.2011.<br>
+    Создано при помощи <a href="http://radiokot.ru/upload/" class="ITL">КотоРед</a>.</p>
+    <p class="Usual">Здравствуй, дорогой Кот! Вот уже более 2,5 лет&nbsp; являясь твоим завсегдатаем, решил и я преподнести тебе скромный сюрприз. И так, по многочисленным просьбам трудящихся форумчан, представляю &laquo;Дозиметр Сталкера&raquo;.</p>
+<p align="center"> <img src='01.jpg'  width='800'  height='457'   border="0" > </p>
+<p align="center"> <img src='02.jpg'  width='800'  height='462'   border="0" > </p>
+<p class="Usual">Сей прибор разрабатывался для домашнего пользования более года назад, когда по воле случая попался в руки отечественный газоразрядный датчик ионизирующего излучения типа СТС-5. Это так называемый счётчик Гейгера-Мюллера, в котором под действием высокоэнергетических частиц (обычно гамма и бета), пролетающих сквозь объём специальной смеси газов, находящихся под нужным давлением и в электрическом поле с достаточно высокой напряжённостью, происходит ионизация газа, вызывающая короткий импульс электрического тока через электроды датчика. Данный дозиметр построен на принципе подсчёта количества этих самых импульсов в единицу времени.</p>
+<div align="center"><a href="03.gif" class="ITL">  <img src='04.gif'    align='middle'  border="0" >  </a></div>
+<p class="Usual">Прибор создан как простой и достаточно функциональный цифровой дозиметр и рассчитан на длительную автономную работу. Он позволяет производить контроль фонового (в соответствии спецификации датчика) излучения в четырёх режимах: сканирующего (время подсчёта 3 секунды), быстрого (время подсчёта 15 секунд), обычного (время подсчёта 1 минута) и точного (время подсчёта 10 минут) с соответствующими допусками. Также производится фиксация в энергонезависимую память максимального и минимального&nbsp; значений интенсивности ионизирующего излучения в микрорентгенах в час, подсчёт суммарно полученной дозы за время измерения в микрорентгенах (только для быстрого, обычного и точного режимов измерения). Текущие измеренные параметры отображаются на графическом ЖК дисплее прибора для удобства как в цифровом виде, так и в аналоговом &ndash; в виде (псевдо)логарифмической шкалы. На шкале имеются две отметки: 25 мкР/ч и 60 мкР/ч &ndash; максимально допустимые уровни по гражданским и военным нормативам соответственно. &nbsp;Также дозиметр имеет опциональную звуковую и визуальную в виде светодиода индикацию улавливаемых частиц, имеет опциональную подсветку экрана с возможностью выбора одного из трёх цветов, позволяет контролировать уровень заряда батареи с отключением по низкому уровню. Кроме того дозиметр осуществляет контроль исправности датчика на предмет пробоя, запотевания, не погаснувшего в виду &laquo;отравления&raquo; внутренней среды датчика или чрезмерной интенсивности излучения разряда. В дозиметре реализована функция зарядки батареи от внешнего сетевого адаптера.</p>
+<p class="Usual">Конструктивно дозиметр выполнен на одной плате печатного монтажа. В качестве клемм удерживающих датчик, применены держатели предохранителя (вставки плавкой).</p>
+<p align="center"> <img src='05.jpg'  width='800'  height='727'   border="0" > </p>
+<p class="Usual">Аккумуляторная батарея крепится к плате при помощи двустороннего скотча. Экран припаивается к плате сверху его &laquo;родными&raquo; металлическими лепестками, с нижних углов напаиваются полоски медной жести. Для залуживания металлических частей рамки экрана их рекомендуется обезжирить и подержать на них несколько секунд кусочек ваты, смоченной замеднённой соляной кислотой (в которой травились платы), в результате части покрываются тонким слоем меди и отлично облуживаются даже в канифоли.&nbsp; Монтаж экрана производится таким образом, чтобы его контактные пружины достаточно плотно прижались к площадкам на плате. При этом нужно следить, чтобы нижняя кромка световода упиралась в прозрачные части корпусов&nbsp; светодиодов. В идеале нижняя кромка световода должна частично их накрывать, что выставляется по максимальной интенсивности и равномерности освещения области отображения экрана. Но в виду того, что smd светодиоды одного и того же типоразмера встречаются в корпусах разной высоты, такой способ позиционирования экрана в данной конструкции не рекомендуется. После установки экрана на его нижний край наклеивается полоса непрозрачного скотча с предварительно приклеенной к нему узкой полоской светоотражающей (оконной) плёнки во внутрь, затем нижний край скотча приклеивается к плате, образуя таким образом светонаправляющую систему, которая не пропускает свет вверх и одновременно значительно повышает яркость и равномерность освещённости области отображения экрана. После пайки всех компонентов настоятельно рекомендуется вскрыть плату несколькими слоями электропрочного лака.</p>
+<p class="Usual">Схематически прибор не имеет выключателя питания. Включение/выключение питания осуществляется удерживанием более двух секунд кнопки Меню/Питание. Кратковременным нажатием этой кнопки осуществляется вызов меню, вход в подменю и принятие выбранной опции. Кнопкой Выход/Отмена осуществляется выход из меню, выход из подменю и отмена выбранной опции. Навигация по пунктам меню осуществляется кнопками Вверх и Вниз. Функция зарядки батареи включается автоматически при подключении зарядного устройства к находящемуся в выключенном состоянии дозиметру. Во время зарядки производится отображение статуса (осуществляется зарядка или уже окончена) и текущего уровня заряда батареи (только при осуществляющейся зарядке), также постоянно светится светодиодный индикатор. Функция отключается при отключении зарядного устройства или при включении дозиметра.&nbsp; При достижении полного заряда батареи прибор переходит в режим капельной дозарядки, на экране при этом индицируется статус завершённой зарядки, а светодиодный индикатор периодически загорается, индицируя протекание тока зарядки.</p>
+<p align="center"><a href="06.jpg" class="ITL"> <img src='07.jpg'  width='500'  height='343'   border="0" > </a></p>
+<p class="Usual">В приборе не применены дефицитные или дорогие компоненты, всё подобрано по концепции &laquo;нарыто в своём сундуке&raquo;. В качестве датчика могут быть использованы отечественные газоразрядные датчики ионизирующего излучения типов СТС-5 или СБМ20. В качестве батареи применён литий-ионный аккумулятор от телефона Nokia 3310 с напряжением 3,7В и ёмкостью 1150 мА*ч. В качестве дисплея &ndash; монохромный ЖК дисплей с разрешением 84х48 точек от той же модели телефона. Вместо микроконтроллера ATmega8 подойдёт обновлённый &ndash; ATmega8A. Допускается замена транзисторов их аналогами, кроме транзистора, стоящего в блокинг-генераторе. Полевой транзистор в цепи зарядки аккумулятора &ndash; любой N-канальный MOSFET &laquo;логической&raquo; серии (у которых гарантируется полное отпирание при напряжении исток-затвор -5В) с током стока не менее 500мА и насколько возможно низким сопротивлением канала в открытом состоянии. Не могу вспомнить, какой именно применил я, возможно, это был IRLML5103. В качестве звукового &laquo;индикатора&raquo; - 32-омная &laquo;пищалка&raquo; с материнской платы ПК. Для изготовления импульсного трансформатора за основу был взят каркас с ферритовым сердечником от резонансного дросселя миниатюрной 9Вт электролюминесцентной лампы-&laquo;сберегайки&raquo; фирмы Deluxe.</p>
+<p align="center"> <img src='08.jpg'  width='800'  height='609'   border="0" > </p>
+<p align="center"> <img src='09.jpg'  width='800'  height='568'   border="0" > </p>
+<p class="Usual">&nbsp;Немагнитный зазор сердечника пришлифовкой на абразивной бумаге уменьшен до ~0,5мм. В качестве зарядного устройства &ndash; &laquo;китайская&raquo; импульсная зарядка для мобильника с напряжением х.х. порядка 8-11В с перепаянным соответствующе подходящим установленному на плате разъёмом. Печатная плата разведена в SprintLayout 5.0, в слое М2 обязательно должна быть включена &laquo;металлизация&raquo; (заливка общим проводом). Все данные о типах элементов и их номиналах в файле присутствуют. Печатная плата изготавливалась методом ЛУТ. В качестве корпуса применён корпус от китайского мультиметра типа DT-830B, думаю в сундуках многих Котов такого добра найдётся в достатке.</p>
+<p align="center"> <img src='10.jpg'  width='691'  height='600'   border="0" > </p>
+<p class="Usual">&nbsp;Собранный без ошибок из заведомо исправных деталей и запрограммированный корректным вариантом прошивки прибор в настройке не нуждается. В выключенном состоянии прибор потребляет не более 45 мкА. Включенный прибор при выключенной подсветке потребляет не более 15 мА. Высоковольтный преобразователь построен по принципу прямоходового импульсного преобразователя на основе блокинг-генератора. &nbsp;Его ток потребления не должен превышать 1-2 мА. Выходное напряжение должно быть в пределах 400 +/- 20В. В виду чрезвычайно большого внутреннего сопротивления данное напряжение можно измерить только вольтметрами электростатического типа. При программировании прибора следует обратить внимание на тип устанавливаемого экрана. Прошивка написана под два часто встречающихся &laquo;китайских&raquo; варианта ЖКИ (под оригинальный прошивка не создавалась в виду дороговизны и чрезвычайно редкой распространённости оного). Их отличительные особенности &ndash; наличие или отсутствие дуги слева рамки экрана.</p>
+<p align="center"> <img src='11.jpg'  width='800'  height='600'   border="0" > </p>
+<p class="Usual">&nbsp;Дело в том, что в них стоят разные контроллеры, которые во многом сходны, но имеют разные смещения областей отображения относительно внутреннего адресного пространства памяти и отличные некоторые команды. Поэтому с &laquo;не своим&raquo; вариантом прошивки информация на экране будет отображаться не корректно. При программировании необходимо установить фуз-биты микроконтроллера на работу совместно с внешним 4МГц кварцевым резонатором и отключение порта JTAG. Также рекомендуется проверить напряжение, при котором закончится процесс зарядки, оно должно составлять не более 4,17В &ndash; при таком напряжении окончилась зарядка в телефоне, где находилась применённая мной батарея до этого. Порог отключения по низкому уровню установлен в районе 3,65В.</p>
+<p class="Usual">ВНИМАНИЕ! Литий-ионные аккумуляторы являются чрезвычайно взрыво- и пожаро-опасными в случае механических, температурных или электрических воздействий. Настоятельно рекомендую ознакомиться с соответствующей информацией перед началом работы с ними! Также в устройстве присутствует потенциально опасное высокое напряжение. Высокое выходное сопротивление источника не позволит нанести серьёзный ущерб организму, но разряд накопительного конденсатора является достаточно ощутимым. Также новичкам настоятельно рекомендуется ознакомиться с техникой электростатической безопасности, поскольку ряд применённых элементов чрезвычайно чувствительны к статическому электричеству.</p>
+<p class="Usual">На этом, вроде, всё. Прошу прощения за отсутствие электрической схемы, поскольку ввиду своей чрезвычайной кошачьей лени в своих поделках рисую сразу платы. А также за &laquo;оптимальность&raquo; и &laquo;грамотность&raquo; в исходнике &ndash; с микроконтроллерами и языком Си познакомился относительно недавно.</p>
+&nbsp;
+<p class="Usual">P.S. А вот представьте себе, многие из нас когда-то были пионЭрами и бегали с вот такими светящимися в темноте компасами, даже не подозревая, что входило по тем временам в состав их светящейся краски:</p>
+<p align="center"> <img src='12.jpg'     border="0" > </p>
+<p align="center"> <img src='13.jpg'  width='638'  height='600'   border="0" > </p>
+<p class="Usual">Вот цитата из Википедии: &laquo;До 70-х годов XX века радий часто использовался для изготовления светящихся красок постоянного свечения (для разметки циферблатов авиационных и морских приборов, специальных часов и других приборов), однако сейчас его обычно заменяют менее опасными изотопами: тритием (T1/2 = 12,3 года) или 147Pm (T1/2 = 2,6 года). Опасность таких приборов состоит в том что они не содержали предупреждающей маркировки, выявить их можно только дозиметрами.&raquo;</p>
+<br />
+<p class="Usual"><a href="http://youtu.be/0ycTFUqszcc" class="ITL">Видео</a> работы девайса.</p>
+<br />
+<p class="Usual">&nbsp;</p>
+    <br>
+    <p class="Usual">
+    <p class="Usual">
+<b>Файлы:</b><br>
+<a href="01.rar" class="ITL">Печтаная плата</a><br><a href="02.rar" class="ITL">Прошивка МК с исходником</a><br></p>
+    </p>
+    <br>
+    <p class="Usual">
+    Все вопросы в
+    <a href="http://www.radiokot.ru/forum/viewtopic.php?t=58813" class="ITL">Форум</a>.
+    </p>
+    <br />ID: 1125<!-- SOCIAL NETWORKS LIKES-->
+
+<div id="socials_likes" style="margin-left:400px; position: absolute;">
+    	<table cellspacing="2" sellpadding="0" border="0" style="position: relative; top: -35px">
+    		<tr>
+    		<td valign="top" width="100">
+       		<!-- Put this div tag to the place, where the Like block will be -->
+<div id="vk_like"></div>
+<script type="text/javascript">
+VK.Widgets.Like("vk_like", {type: "button"});
+</script>    		</td>
+    		<td valign="top"  width="100">
+    		<div class="fb-like" data-send="false" data-layout="button_count" data-width="200" data-show-faces="true"></div>    		</td>
+    		</tr>
+    	</table>
+</div>
+
+
+<div id="adv1">
+<table border=0 align=center><tr><td>
+<script async type='text/javascript'
+src='//s.luxupadva.com/t/common_403.js'></script>
+<script class='__lxGc__' type='text/javascript'>
+((__lxGc__=window.__lxGc__||{'s':{},'b':0})['s']['_205948']=__lxGc__['s']['_205948']||{'b':{}})['b']['_602793']={'i':__lxGc__.b++};
+</script>
+</td><td>
+<script async type='text/javascript'
+src='//s.luxupadva.com/t/common_403.js'></script>
+<script class='__lxGc__' type='text/javascript'>
+((__lxGc__=window.__lxGc__||{'s':{},'b':0})['s']['_205948']=__lxGc__['s']['_205948']||{'b':{}})['b']['_602792']={'i':__lxGc__.b++};
+</script>
+</td></tr></table>
+</div>
+<script type="text/javascript">
+
+// Get the HTTP Object
+function getHTTPObject(){
+   if (window.ActiveXObject) return new ActiveXObject("Microsoft.XMLHTTP");
+   else if (window.XMLHttpRequest) return new XMLHttpRequest();
+   else {
+      alert("Ваш браузер окончательно бесполезен и не поддерживает AJAX.");
+      return null;
+   }
+}  
+
+
+
+
+function show_tab(id){
+    var i;
+  for (i=1; i<5; i++){
+    document.getElementById("d"+i).style.display = 'none'; 
+   // document.getElementById("d_"+i).className = 'close';
+  }
+  document.getElementById("d"+id).style.display = 'block';
+  //document.getElementById("d_"+id).className = 'open';
+  
+}
+
+
+function show_ext(){
+   if (document.getElementById("dext").style.display == 'none'){
+      document.getElementById("dext").style.display = 'block';
+   }else{
+      document.getElementById("dext").style.display = 'none';
+   }
+  
+}
+
+
+function show_ext1(){
+   if (document.getElementById("aw").style.display == 'none'){
+      document.getElementById("aw").style.display = 'block';
+      CurPos_enable=10;
+   }else{
+      document.getElementById("aw").style.display = 'none';
+      CurPos_enable=0;
+   }
+}
+
+
+
+
+
+
+
+function str_replace(search, replace, subject) {
+    return subject.split(search).join(replace);
+} 
+
+function sendforumid(){
+    var per;
+     per=document.getElementById("forum_addform").value;
+    if (per==""){alert("Заполните поле");}else{
+        
+     per= str_replace("&","and",per);
+        
+        var httpObject;
+              httpObject = getHTTPObject();
+   if (httpObject != null) {
+      httpObject.open("GET", "?forumid="+per+"&uid="+1125, false);
+      httpObject.send(null);
+    //  httpObject.onreadystatechange = setOutput;
+   }     
+           document.getElementById("forum_add_res").innerHTML =  httpObject.responseText;
+   // document.getElementById("forum_add_res").innerHTML = "Данные успешно переданы на рассмотрение модератору.";     
+    document.getElementById("forum_add_form").style.display = 'none';
+  }
+}
+function restart_fid(){
+       document.getElementById("forum_add_form").style.display = 'block';
+       document.getElementById("forum_add_res").innerHTML = "";  
+       document.getElementById("forum_addform").value="";
+}
+
+
+
+
+
+
+
+function sendtag(){
+    
+        var per;
+                
+        var httpObject;
+              httpObject = getHTTPObject();
+              
+     per=document.getElementById("tag_addform").value;
+    if (per==""){alert("Заполните поле");}else{
+        
+
+   if (httpObject != null) {
+      httpObject.open("GET", "?tag="+encodeURIComponent(per)+"&uid="+1125, false);
+      httpObject.send(null);
+    //  httpObject.onreadystatechange = setOutput;
+   }
+   
+    document.getElementById("tag_add_res").innerHTML =httpObject.responseText;
+    document.getElementById("tag_addform").value="";
+    document.getElementById("tag_add_form").style.display = 'none';
+  }
+}
+function restarttag(){
+    
+    document.getElementById("tag_add_res").innerHTML ="";
+    document.getElementById("tag_add_form").style.display = 'block';  
+    
+}
+
+
+
+
+function likeform_clik(frm_res){
+            
+        var httpObject;
+              httpObject = getHTTPObject();
+              
+   // document.getElementById("like_form").innerHTML = "Ваш голос принят, спасибо";     
+   // document.getElementById("like_form").style.display = 'none';
+   if (httpObject != null) {
+      httpObject.open("GET", "?like="+frm_res+"&uid="+1125, false);
+      httpObject.send(null);
+    //  httpObject.onreadystatechange = setOutput;
+   }  
+      document.getElementById("like_res").innerHTML =httpObject.responseText;
+   
+}
+function workform_clik(frm_res){
+            
+        var httpObject;
+              httpObject = getHTTPObject();
+   // document.getElementById("work_form").innerHTML = "Ваш голос принят, спасибо";     
+  //  document.getElementById("work_form").style.display = 'none';
+     if (httpObject != null) {
+      httpObject.open("GET", "?work="+frm_res+"&uid="+1125, false);
+      httpObject.send(null);
+    //  httpObject.onreadystatechange = setOutput;
+   }  
+   document.getElementById("work_res").innerHTML =httpObject.responseText;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function mousePageXY(e)
+{
+  var x = 0, y = 0;
+
+  if (!e) e = window.event;
+
+  if (e.pageX || e.pageY)
+  {
+    x = e.pageX;
+    y = e.pageY;
+  }
+  else if (e.clientX || e.clientY)
+  {
+    x = e.clientX + (document.documentElement.scrollLeft || document.body.scrollLeft) - document.documentElement.clientLeft;
+    y = e.clientY + (document.documentElement.scrollTop || document.body.scrollTop) - document.documentElement.clientTop;
+  }
+
+  return {"x":x, "y":y};
+}
+
+ var CurPos;
+ var CurPos_enable=0;
+document.onmousemove = function(e){
+    if (CurPos_enable==1) CurPos = mousePageXY(e); 
+};
+
+function CurPos_enable_set(stat)
+{
+    CurPos_enable=stat;
+}
+
+function show_wf(id)
+{
+   if (CurPos_enable==10) return;
+   if (CurPos_enable==0){CurPos_enable=1;}else{
+    document.getElementById("wfr"+id).style.display = 'block';
+   	document.getElementById("wfr"+id).style.position= 'absolute';
+   	document.getElementById("wfr"+id).style.left= CurPos.x+'px';
+	document.getElementById("wfr"+id).style.top= (CurPos.y-320)+'px';
+    }
+}
+function unshow_wf(id)
+{
+if (CurPos_enable==10) return;
+    CurPos_enable=0;
+    document.getElementById("wfr"+id).style.display = 'none';
+}
+
+
+
+
+
+
+
+
+
+
+
+</script><hr style="border: 1px solid maroon;">
+<table align="center" cellspacing="10" width="700">
+<tr>
+<td>
+<div id="like_form">
+<p class="Usual" style="padding-left:0;"><b>Как вам эта статья?</b></p>
+<form id="likeform" method="post">
+<p class="Usual" style="padding-left:0;font-size:8pt;">
+<input type="radio" value="0"  name="like_st"  disabled="disabled" onclick="javascript: likeform_clik(0);"><font color="#00BB00">&nbsp;Нравится</font><br>
+<input type="radio" value="1"  name="like_st"  disabled="disabled" onclick="javascript: likeform_clik(1);"><font color="#AA9900">&nbsp;Так себе</font><br>
+<input type="radio" value="2"  name="like_st"  disabled="disabled" onclick="javascript: likeform_clik(2);"><font color="#DD0000">&nbsp;Не нравится</font>
+</p>
+</form>
+</div>
+</td>
+
+<td>
+<div id="work_form">
+<p class="Usual" style="padding-left:0;"><b>Заработало ли это устройство у вас?</b></p>
+<form id="workform" method="post">
+<p class="Usual" style="padding-left:0;font-size:8pt;">
+<input type="radio" value="0"  name="work_st"  disabled="disabled" onclick="javascript: workform_clik(0);"><font color="#00DD00">&nbsp;Заработало сразу</font><br>
+<input type="radio" value="1"  name="work_st"  disabled="disabled" onclick="javascript: workform_clik(1);"><font color="#AA9900">&nbsp;Заработало после плясок с бубном</font><br>
+<input type="radio" value="2"  name="work_st"  disabled="disabled" onclick="javascript: workform_clik(2);"><font color="#DD0000">&nbsp;Не заработало совсем</font>
+</p>
+</form>
+</div>
+</td></tr>
+<tr>
+<td valign="top">
+<div id="like_res">
+    <table width="300px" border="0" cellspacing="0">
+<tr>	<td bgcolor="#00DD00" width="97%" align="right" style="font-size:11pt; color:#fff;">343</td>	<td bgcolor="#FFFF00" width="2%" align="center" style="font-size:11pt; color:#000;">5</td>	<td bgcolor="#DD0000" width="2%" align="left" style="font-size:11pt; color:#fff;">6</td></tr>
+</table>
+</div>
+</td>
+<td valign="top">
+<div id="work_res">
+<div id="wfr1" style="display: none; position:absolute; padding: 10px;background-color: #00DD00;font-size:11pt;color:#fff;">miro<br>ELcat<br>NO F3@R<br>AMD<br>sanntex<br>rtl8186<br>Schegol<br>Kan-sama<br>techlab<br>ururur<br>Lepsik<br>Treg<br>Zinovaleks95<br>AlexZ<br>Александр76<br>sergey_sitnik<br>Alphyn<br>iva816<br>ipf<br>serradist<br>sergei14<br>ivanjust<br>Doza_Narkoza<br>vovan1981<br>Matvey<br>aliens06<br>arhar<br>tevga<br>Nem<br>Wirehead<br>Алексей FAV<br>slavector<br>STR@NNIK<br>Сергей800611<br>dorya<br>ІГОР<br>m169<br>ur5got<br>ValAnd<br>Margon<br>Starui Ded<br>alexdob<br>ad666<br>trainsim<br>sergioflash<br>Tavrus<br>aleks5<br>Sanchous_321<br>Дмитрий2012<br>chip_serg<br>grott<br>MadOrc<br>Catshtein<br>452121<br>slava5555555<br>gbfy2<br>zbuk<br>Czech<br>Simplyman<br>alextrain<br>Combo<br>Роман Elerom80<br>DenisG2<br>VZH_79<br>igor2269<br>sergkse<br>Ser555<br>Shpaser<br>whitemoon_lg<br>Vlad1977<br>Valter71<br>ProzektoR_UA<br>Nik69<br>ekarus<br>Glow2020<br>kotoslon<br>Snowlion<br>Amba<br>Илья Прохоров<br>Appll<br>SergeyK<br>vlrn<br>Юрий Денисов<br>Ilya Violin<br>Leumas<br>RD3AVJ<br>Tankor<br>RUS_D<br>Regus<br>art070<br>Shurf<br>Panzerschutze<br>Vladimir_73<br>Sanchous_123<br>Flash.#13<br>salamandra<br>Polf<br>metalmagnit<br>ALEX CAT<br>jkserg<br>zamytin<br>rorshax<br>Alex1011<br>Gaff<br>Andy620<br>smergul<br>M_ARK<br></div><div id="wfr2" style="display: none; position:absolute; padding: 10px;background-color: #FFFF00;font-size:11pt;color:#000;">просто КОТ<br>bakassa<br>Weniamin76<br>ded6moroz<br>alexomega<br>Vet-RX<br>mag999<br>Nikomo<br>salyara<br>aivcon<br>yezhelin_roman<br></div><div id="wfr3" style="display: none; position:absolute; padding: 10px;background-color: #DD0000;font-size:11pt;color:#fff;">AlexPv<br>RadiSt_87<br>Мурзик Паяльников<br></div><div id="wfrt" style="display: none; position:absolute;"></div>
+    <table width="300px" border="0" cellspacing="0">
+<tr>	<td bgcolor="#00DD00" width="89%" align="right" style="font-size:11pt; color:#fff;"  onmousemove="show_wf(1,this);" onmouseout="unshow_wf(1);">107</td>	<td bgcolor="#FFFF00" width="10%" align="center" style="font-size:11pt; color:#000;"  onmousemove="show_wf(2,this);" onmouseout="unshow_wf(2);">11</td>	<td bgcolor="#DD0000" width="3%" align="left" style="font-size:11pt; color:#fff;"  onmousemove="show_wf(3,this);" onmouseout="unshow_wf(3);">3</td></tr>
+</table><a href="javascript: show_ext1();" class="itl">Подробно</a> 
+ <br> <div id="aw" style="display: none;">
+ <p class="Usual">
+ <font color="#00DD00">&nbsp;Заработало сразу:</font><br> 
+miro<br>ELcat<br>NO F3@R<br>AMD<br>sanntex<br>rtl8186<br>Schegol<br>Kan-sama<br>techlab<br>ururur<br>Lepsik<br>Treg<br>Zinovaleks95<br>AlexZ<br>Александр76<br>sergey_sitnik<br>Alphyn<br>iva816<br>ipf<br>serradist<br>sergei14<br>ivanjust<br>Doza_Narkoza<br>vovan1981<br>Matvey<br>aliens06<br>arhar<br>tevga<br>Nem<br>Wirehead<br>Алексей FAV<br>slavector<br>STR@NNIK<br>Сергей800611<br>dorya<br>ІГОР<br>m169<br>ur5got<br>ValAnd<br>Margon<br>Starui Ded<br>alexdob<br>ad666<br>trainsim<br>sergioflash<br>Tavrus<br>aleks5<br>Sanchous_321<br>Дмитрий2012<br>chip_serg<br>grott<br>MadOrc<br>Catshtein<br>452121<br>slava5555555<br>gbfy2<br>zbuk<br>Czech<br>Simplyman<br>alextrain<br>Combo<br>Роман Elerom80<br>DenisG2<br>VZH_79<br>igor2269<br>sergkse<br>Ser555<br>Shpaser<br>whitemoon_lg<br>Vlad1977<br>Valter71<br>ProzektoR_UA<br>Nik69<br>ekarus<br>Glow2020<br>kotoslon<br>Snowlion<br>Amba<br>Илья Прохоров<br>Appll<br>SergeyK<br>vlrn<br>Юрий Денисов<br>Ilya Violin<br>Leumas<br>RD3AVJ<br>Tankor<br>RUS_D<br>Regus<br>art070<br>Shurf<br>Panzerschutze<br>Vladimir_73<br>Sanchous_123<br>Flash.#13<br>salamandra<br>Polf<br>metalmagnit<br>ALEX CAT<br>jkserg<br>zamytin<br>rorshax<br>Alex1011<br>Gaff<br>Andy620<br>smergul<br>M_ARK<br><font color="#AA9900">&nbsp;Заработало после плясок с бубном:</font><br>  
+просто КОТ<br>bakassa<br>Weniamin76<br>ded6moroz<br>alexomega<br>Vet-RX<br>mag999<br>Nikomo<br>salyara<br>aivcon<br>yezhelin_roman<br><font color="#DD0000">&nbsp;Не заработало совсем:</font><br> 
+AlexPv<br>RadiSt_87<br>Мурзик Паяльников<br></p></div>
+</div>
+</td>
+</tr></table>
+</index>
+</div>
+</div>
+     </td>
+     <td background="http://radiokot.ru/templates/radiokot_classic/images/content/centr_r_f.png" width="55"></td>
+     <td background="http://radiokot.ru/templates/radiokot_classic/images/content/centr_r_f.png" width="55"></td>
+       <!-- Правая рекламма-->
+<link rel="stylesheet" type="text/css" href="http://radiokot.ru/templates/default/adv.css">
+        <td valign="top">
+   
+   
+   
+   
+   
+
+<div style="height:436px;">
+<iframe name="txbnr" src="http://banner.tixer.ru/html/localhost.php" width="180" height="436" align="left" style="border: 0px black solid;overflow:hidden;" id="txiframe" scrolling="no">
+<a href="http://tixer.ru">Интернет-магазин радиодеталей в Москве с бесплатной доставкой почтой</a>
+</iframe> 
+<script src="http://banner.tixer.ru/jquery.min.js"></script>   
+</div>
+
+<!--
+<a href="http://tixer.ru/">
+<img src="http://tixer.ru/180x400.gif" width="180" height="400" border="0"
+hspace="0" vspace="0" alt="tixer.ru - Интернет-магазин электронных
+компонентов и радиодеталей. Радиодетали почтой.">
+</a>
+-->
+<br><br>
+
+<div class='sape'>
+</div>
+
+
+	<br><br>
+
+	<!-- Яндекс.Директ -->
+	<script type="text/javascript">
+	//<![CDATA[
+	yandex_partner_id = 62247;
+	yandex_site_bg_color = 'F6CB8B';
+	yandex_site_charset = 'windows-1251';
+	yandex_ad_format = 'direct';
+	yandex_font_size = 0.7;
+	yandex_direct_type = 'vertical';
+	yandex_direct_limit = 4;
+	yandex_direct_header_bg_color = 'FEEAC7';
+	yandex_direct_bg_color = 'FFFFCC';
+	yandex_direct_title_color = '0000CC';
+	yandex_direct_url_color = '006600';
+	yandex_direct_all_color = '0000CC';
+	yandex_direct_text_color = '000000';
+	yandex_direct_hover_color = '0066FF';
+	yandex_direct_favicon = true;
+	document.write('<sc'+'ript type="text/javascript" src="http://an.yandex.ru/system/context.js"></sc'+'ript>');
+	//]]>
+	</script>
+<br><br>
+<!--
+<a id="snf8536" href="http://www.selectornews.com">SELECTORNEWS - покупка, обмен и продажа трафика</a>
+<script type="text/javascript" charset="utf-8" src="http://js.sn00.net/00/85/36.js"></script>
+-->
+<br>
+<!--AdvMaker SlideBanner
+<div id="amsb"></div><script type="text/javascript" src="//am15.net/sb.php?s=63206"></script>-->
+	</td>
+<!-- Правая рекламма-->
+     </tr>
+     <tr height="53" valign="bottom">
+     <td width="53"><img src="http://radiokot.ru/templates/radiokot_classic/images/content/left_b_f.png" width="53" height="53" class="png"></td>
+     <td class="bottom_content_bg" width="100%">
+     </td>
+     <td width="55"><img src="http://radiokot.ru/templates/radiokot_classic/images/content/right_b_f.png" width="55" height="53" class="png"></td>
+    </tr>
+    </div>
+    </table>
+
+</div>
+</div>
+</div>
+<center style="margin-top: 0px;">
+<!--<script type="text/javascript">
+var begun_auto_pad = 282230264;
+var begun_block_id = 282260052;
+</script>
+<script src="http://autocontext.begun.ru/autocontext2.js" type="text/javascript"></script>
+-->
+<!-- Яндекс.Директ
+<div id="yandex_ad"></div>
+<script type="text/javascript">
+(function(w, d, n, s, t) {
+w[n] = w[n] || [];
+w[n].push(function() {
+Ya.Direct.insertInto(62247, "yandex_ad", {
+site_charset: "windows-1251",
+ad_format: "direct",
+font_size: 0.9,
+type: "horizontal",
+limit: 4,
+title_font_size: 1,
+site_bg_color: "F6CB8B",
+header_bg_color: "FFFFCC",
+bg_color: "FFFFCC",
+title_color: "0000CC",
+url_color: "006600",
+all_color: "0000CC",
+text_color: "000000",
+hover_color: "0066FF",
+favicon: true
+});
+});
+t = d.documentElement.firstChild;
+s = d.createElement("script");
+s.type = "text/javascript";
+s.src = "http://an.yandex.ru/system/context.js";
+s.setAttribute("async", "true");
+t.insertBefore(s, t.firstChild);
+})(window, document, "yandex_context_callbacks");
+</script>
+-->
+<!-- Яндекс.Директ постер-->
+<div id="yandex_ad"></div>
+<script type="text/javascript">
+(function(w, d, n, s, t) {
+w[n] = w[n] || [];
+w[n].push(function() {
+Ya.Direct.insertInto(62247, "yandex_ad", {
+ad_format: "direct",
+type: "posterHorizontal",
+limit: 4,
+title_font_size: 3,
+links_underline: false,
+site_bg_color: "F6CB8B",
+bg_color: "FFFFCC",
+title_color: "0000CC",
+url_color: "006600",
+text_color: "000000",
+hover_color: "0066FF",
+sitelinks_color: "0000CC",
+favicon: true,
+no_sitelinks: false
+});
+});
+t = d.getElementsByTagName("script")[0];
+s = d.createElement("script");
+s.src = "//an.yandex.ru/system/context.js";
+s.type = "text/javascript";
+s.async = true;
+t.parentNode.insertBefore(s, t);
+})(window, document, "yandex_context_callbacks");
+</script>
+
+</td>
+     <td class="right_plata_bg" width="32" valign="top"></td>
+    </tr>
+    <tr height="13" valign="bottom">
+     <td width="28"><img src="http://radiokot.ru/templates/radiokot_classic/images/content/letf_p_b_t.png" width="28" height="13" class="png"></td>
+     <td class="bottom_plata_bg" width="100%"></td>
+     <td width="32"><img src="http://radiokot.ru/templates/radiokot_classic/images/content/right_p_b_t.png" width="32" height="13" class="png"></td>
+    </tr>
+   </table>
+
+<div id="footer">
+
+<div align="center" valign="bottom">
+<p class="Copyright" align="left">Работоспособность сайта проверена в браузерах:<br>
+IE8.0, Opera 9.0, Netscape Navigator 7.0, Mozilla Firefox 5.0<br>
+Адаптирован для работы при разрешениях экрана от 1280х1024 и выше. <br>При меньших разрешениях возможно появление горизонтальной прокрутки.<br>
+По всем вопросам обращайтесь к Коту: <a href="mailto:kot@radiokot.ru" style="font-weight: bold; color: gray;">kot@radiokot.ru</a><br>
+&copy;2005-2017
+</p>
+<!--noindex-->
+<!-- begin of Top100 code -->
+<script id="top100Counter" type="text/javascript" src="http://counter.rambler.ru/top100.jcn?1549534"></script><noscript><img src="http://counter.rambler.ru/top100.cnt?1549534" alt="" width="1" height="1" border="0"></noscript>
+<!-- end of Top100 code -->
+<!--begin of Top100 logo-->
+<a href="http://top100.rambler.ru/top100/"><img src="http://top100-images.rambler.ru/top100/w7.gif" alt="Rambler's Top100" width=88 height=31 border=0 valign="bottom"></a>
+<!--end of Top100 logo -->
+
+
+<script language="javascript"><!--
+d=document;nv=navigator;na=nv.appName;t=top;f=t.frames.length;r_js=10;
+r_r="rn="+Math.round(Math.random()*10000)+"&r="+escape(d.referrer)+"&pg="+escape(window.location.href);
+if(self!=parent){r_r+="&tpg="+escape(t.d.location);r_r+="&tr="+escape(t.d.referrer);}
+d.cookie="rdnt=1";r_r+="&c="+(d.cookie?"y":"n")+"&f="+f;
+n=(na.substring(0,3)=="Mic")?0:1;
+//--></script><script language="javascript1.1"><!--
+r_js=11;fl2=fl3=fl4=fl5=fl6=false;flv=0;
+if((nv.appVersion.indexOf("MSIE")!=-1)&&(nv.appVersion.indexOf("Windows")!=-1)){
+tf='=(IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.';
+d.write('<scr'+'ipt language=VBScript\> \n if ScriptEngineMajorVersion>=2 then\n on error resume next \n');
+d.write('fl3'+tf+'3"))) \n fl4'+tf+'4"))) \n');
+d.write('fl5'+tf+'5"))) \n fl6'+tf+'6"))) \n');
+d.write('end if </scr'+'ipt\> ');for(var i=3;i<=6;i++){if(eval("fl"+i)==true){flv=i;}}}
+if(nv.plugins){if(nv.plugins["Shockwave Flash 2.0"] || nv.plugins["Shockwave Flash"]){
+var v2=nv.plugins["Shockwave Flash 2.0"]?" 2.0":"";
+var fl_op=nv.plugins["Shockwave Flash"+v2].description;
+flv=parseInt(fl_op.charAt(fl_op.indexOf(".")-1));}}
+r_r+="&j="+(nv.javaEnabled()?"y":"n")+"&fl="+flv;
+//--></script><script language="javascript1.2"><!--
+r_js=12;s=screen;px=(n==0)?s.colorDepth:s.pixelDepth;
+r_r+="&wh="+s.width+'x'+s.height+"&px="+px;
+//--></script><script language="javascript1.3"><!--
+r_js=13;
+//--></script><script language="javascript"><!--
+r_r+="&js="+r_js;
+d.write("<a href='http://www.radionet.com.ru/top/c.php?id=1171' target='_top'>"
++"<img src='http://www.radionet.com.ru/top/cnt.cgi?id=1171&cnt=2&l=5&"+r_r
++"' border=0 width=88 height=31 alt='RadioTop'></a>");
+if(r_js>11)d.write('<'+'!-- ')//--></script>
+
+<div style='visibility:hidden'><a href="http://radionet.com.ru">radionet</a></div><noscript>
+<a href="http://radionet.com.ru/top/c.php?id=1171" target="_top">
+<img src="http://radionet.com.ru/top/cnt.cgi?id=1171&cnt=2&l=5&js=-1" border=0 width=88 height=31 alt="RadioTop"></a>
+</noscript><script language="JavaScript"><!--
+if(r_js>11)d.write('--'+'>')//--></script>
+
+
+
+<!-- SpyLOG f:0211 -->
+<script language="javascript"><!--
+Md=document;Mnv=navigator;Mp=1;
+Mn=(Mnv.appName.substring(0,2)=="Mi")?0:1;Mrn=Math.random();
+Mt=(new Date()).getTimezoneOffset();
+Mz="p="+Mp+"&rn="+Mrn+"&t="+Mt;
+Md.cookie="b=b";Mc=0;if(Md.cookie)Mc=1;Mz+='&c='+Mc;
+Msl="1.0";
+//--></script><script language="javascript1.1"><!--
+Mpl="";Msl="1.1";Mj = (Mnv.javaEnabled()?"Y":"N");Mz+='&j='+Mj;
+//--></script>
+<script language="javascript1.2"><!--
+Msl="1.2";
+//--></script><script language="javascript1.3"><!--
+Msl="1.3";//--></script><script language="javascript"><!--
+Mu="u6868.31.spylog.com";My="";
+My+="<a href='http://"+Mu+"/cnt?cid=686831&f=3&p="+Mp+"&rn="+Mrn+"' target='_blank'>";
+My+="<img src='http://"+Mu+"/cnt?cid=686831&"+Mz+"&sl="+Msl+"&r="+escape(Md.referrer)+"&pg="+escape(window.location.href)+"' border=0 width=88 height=31 alt='SpyLOG'>";
+My+="</a>";Md.write(My);//--></script><noscript>
+<a href="http://u6868.31.spylog.com/cnt?cid=686831&f=3&p=1" target="_blank">
+<img src="http://u6868.31.spylog.com/cnt?cid=686831&p=1" alt='SpyLOG' border='0' width=88 height=31 >
+</a></noscript>
+<!--SpyLOG -->
+
+
+<!--Rating@Mail.ru COUNTEr--><script language="JavaScript" type="text/javascript"><!--
+d=document;var a='';a+=';r='+escape(d.referrer)
+js=10//--></script><script language="JavaScript1.1" type="text/javascript"><!--
+a+=';j='+navigator.javaEnabled()
+js=11//--></script><script language="JavaScript1.2" type="text/javascript"><!--
+s=screen;a+=';s='+s.width+'*'+s.height
+a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth)
+js=12//--></script><script language="JavaScript1.3" type="text/javascript"><!--
+js=13//--></script><script language="JavaScript" type="text/javascript"><!--
+d.write('<a href="http://top.mail.ru/jump?from=963534"'+
+' target=_top><img src="http://d3.cb.be.a0.top.list.ru/counter'+
+'?id=963534;t=55;js='+js+a+';rand='+Math.random()+
+'" alt="Рейтинг@Mail.ru"'+' border=0 height=31 width=88/><\/a>')
+if(11<js)d.write('<'+'!-- ')//--></script><noscript><a
+target=_top href="http://top.mail.ru/jump?from=963534"><img
+src="http://d3.cb.be.a0.top.list.ru/counter?js=na;id=963534;t=55"
+border=0 height=31 width=88
+alt="Рейтинг@Mail.ru"/></a></noscript><script language="JavaScript" type="text/javascript"><!--
+if(11<js)d.write('--'+'>')//--></script><!--/COUNTER-->
+
+
+<!--/noindex-->
+
+</div>
+</div>
+</div>
+</div>
+</td></tr></table>
+</body>
+</html>
